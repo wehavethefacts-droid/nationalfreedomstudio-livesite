@@ -21,8 +21,12 @@ export default function Layout({ children }: LayoutProps) {
       <header className="border-b border-border sticky top-0 z-50 bg-background">
         <nav className="container max-w-6xl mx-auto px-4 py-6 md:py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <Link href="/" className="text-2xl md:text-3xl font-bold tracking-widest hover:opacity-75 transition-opacity">
-              /// NF
+            <Link href="/" className="hover:opacity-75 transition-opacity">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_mark_c3e5ebb0.svg"
+                alt="National Freedom Studio"
+                className="h-8 md:h-10 w-auto"
+              />
             </Link>
             <ul className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-bold tracking-widest">
               {navLinks.map((link) => (

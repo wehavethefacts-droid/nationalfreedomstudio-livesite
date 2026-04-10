@@ -12,17 +12,24 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{
               backgroundImage:
-                "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/nf-hero-editorial-collage-7k9z4955CLJVVxTaxHuPaT.webp')",
+                "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control-wide_01_4c2a4d5b.jpg')",
             }}
           />
 
           {/* Content */}
           <div className="relative z-10 container max-w-4xl mx-auto px-4 text-center space-y-8">
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
-              NATIONAL
-              <br />
-              FREEDOM
-            </h1>
+            <div className="flex flex-col items-center gap-6">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_ec824840.svg"
+                alt="National Freedom Studio"
+                className="h-24 md:h-32 w-auto"
+              />
+              <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
+                NATIONAL
+                <br />
+                FREEDOM
+              </h1>
+            </div>
             <p className="text-lg md:text-2xl font-serif leading-relaxed text-foreground/90 max-w-2xl mx-auto">
               {studioInfo.tagline}
             </p>
