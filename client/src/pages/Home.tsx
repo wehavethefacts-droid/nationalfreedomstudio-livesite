@@ -9,20 +9,29 @@ export default function Home() {
         <section className="relative h-screen md:h-[80vh] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-40"
+            className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{
               backgroundImage:
                 "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control-wide_01_4c2a4d5b.jpg')",
             }}
           />
 
+          {/* Repeating Text Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-15">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_ce7cb558.svg"
+              alt="National Freedom"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           {/* Content */}
           <div className="relative z-10 container max-w-4xl mx-auto px-4 text-center space-y-8">
             <div className="flex flex-col items-center gap-6">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_ec824840.svg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_mark_5055bdeb.svg"
                 alt="National Freedom Studio"
-                className="h-24 md:h-32 w-auto"
+                className="h-20 md:h-28 w-auto"
               />
               <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
                 NATIONAL

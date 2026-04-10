@@ -23,7 +23,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <Link href="/" className="hover:opacity-75 transition-opacity">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_mark_c3e5ebb0.svg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_mark_5055bdeb.svg"
                 alt="National Freedom Studio"
                 className="h-8 md:h-10 w-auto"
               />
