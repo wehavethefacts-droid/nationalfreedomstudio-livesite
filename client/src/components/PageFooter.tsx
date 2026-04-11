@@ -9,7 +9,7 @@ export default function PageFooter() {
     <footer className="relative w-full">
       {/* Backslash Divider */}
       <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full mt-12 md:mt-24 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundSize: 'auto 100%',
@@ -21,7 +21,7 @@ export default function PageFooter() {
 
       {/* Footer Section */}
       <section
-        className="relative w-full py-16 md:py-12 -mt-8 md:-mt-16"
+        className="relative w-full py-16 md:py-12 mt-0"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
