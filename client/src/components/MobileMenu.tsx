@@ -21,7 +21,7 @@ export default function MobileMenu() {
       {/* Hamburger Menu Button in Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 right-4 z-50 flex flex-col gap-1.5"
+        className="md:hidden fixed top-4 right-4 z-[9999] flex flex-col gap-1.5"
         style={{
           background: "none",
           border: "none",
@@ -33,7 +33,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "white",
+            backgroundColor: "black",
             transition: "all 0.3s ease",
             transform: isOpen ? "rotate(45deg) translateY(10px)" : "none",
           }}
@@ -42,7 +42,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "white",
+            backgroundColor: "black",
             transition: "all 0.3s ease",
             opacity: isOpen ? 0 : 1,
           }}
@@ -51,7 +51,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "white",
+            backgroundColor: "black",
             transition: "all 0.3s ease",
             transform: isOpen ? "rotate(-45deg) translateY(-10px)" : "none",
           }}
