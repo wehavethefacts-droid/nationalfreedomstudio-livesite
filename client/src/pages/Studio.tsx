@@ -41,7 +41,7 @@ export default function Studio() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="relative w-full py-0 md:py-0 pb-8 md:pb-12 bg-black">
+      <section className="relative w-full py-0 md:py-0 pb-4 md:pb-6 bg-black">
         {/* Grainy Texture Overlay */}
         <div
           className="absolute inset-0 w-full h-full z-0"
