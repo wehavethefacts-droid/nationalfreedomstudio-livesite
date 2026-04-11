@@ -173,23 +173,23 @@ export default function Discography() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full py-12 md:py-16 bg-white">
+      <section className="relative w-full py-8 md:py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="space-y-12">
+          <div className="space-y-8">
             {discography.map((artist, idx) => (
               <div key={idx} className="border-b border-gray-300 pb-8 last:border-b-0">
-                <h3 className="text-xl md:text-2xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+                <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Inconsolata', monospace"}}>
                   {artist.artist}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {artist.albums.map((album, albumIdx) => (
                     <div key={albumIdx} className="flex items-start">
-                      <span className="text-gray-400 mr-4" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
+                      <span className="text-gray-400 mr-3 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
                       <div className="flex-1">
-                        <p className="font-bold text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <p className="font-bold text-gray-900 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>
                           {album.title}
                         </p>
-                        <p className="text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <p className="text-xs text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
                           <span style={{color: '#00FF00'}}>///</span>{album.year}
                           {album.note && <span className="ml-2 italic">{album.note}</span>}
                           <a href={album.url} className="ml-3 text-green-500 hover:text-green-600 font-bold">
@@ -205,7 +205,7 @@ export default function Discography() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 text-center">
+          <div className="mt-12 text-center">
             <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
               Wanna book? Got questions?
             </p>
