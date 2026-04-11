@@ -30,9 +30,9 @@ export default function Home() {
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_960f51cf.svg"
               alt="National Freedom"
               style={{
-                width: '600px',
+                width: '1200px',
                 height: 'auto',
-                maxWidth: '90vw',
+                maxWidth: '95vw',
                 display: 'block'
               }}
             />
