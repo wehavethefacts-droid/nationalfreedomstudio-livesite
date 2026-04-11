@@ -2,7 +2,7 @@ import { Link } from "wouter";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
         {/* Video Background */}
@@ -30,28 +30,24 @@ export default function Home() {
             />
           </Link>
         </div>
-
-        {/* Bottom Slash Vector Overlay */}
-        <svg
-          className="absolute bottom-0 left-0 w-full h-auto z-5 opacity-40"
-          viewBox="0 0 1920 200"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <pattern id="slashes" x="0" y="0" width="120" height="200" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="0" x2="120" y2="200" stroke="white" strokeWidth="40" />
-            </pattern>
-          </defs>
-          <rect width="1920" height="200" fill="url(#slashes)" />
-        </svg>
       </section>
 
-      {/* Footer Section */}
-      <footer className="relative w-full mt-8 md:mt-0 py-16 md:py-12 bg-cover bg-center bg-top">
-        {/* Decorative Divider */}
-        <div className="absolute -top-16 w-full h-16 md:h-32 bg-repeat-x"></div>
+      {/* Backslash Divider - spans hero and footer */}
+      <div
+        className="relative w-full h-16 md:h-32 -translate-y-1/2 z-20 bg-contain bg-bottom bg-repeat-x"
+        style={{
+          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash_eda6b43c.svg)',
+        }}
+      ></div>
 
+      {/* Footer Section */}
+      <footer
+        className="relative w-full mt-0 py-16 md:py-12 bg-gray-50"
+        style={{
+          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_d825c0ab.png)',
+          backgroundSize: 'auto',
+        }}
+      >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
           {/* Studio Info Box */}
           <div className="max-w-sm mt-auto md:ml-auto mx-auto p-6 bg-black">
