@@ -26,11 +26,19 @@ export default function Home() {
         {/* Logo Overlay */}
         <div className="absolute inset-0 z-10 flex items-center justify-center">
           <Link href="/studio">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_349cc028.svg"
-              alt="National Freedom Studio"
-              className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
-            />
+            <div className="w-full h-full cursor-pointer hover:opacity-80 transition-opacity flex items-center justify-center">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 990 399.6"
+                className="w-4/5 h-4/5"
+              >
+                <style>{`.st0{fill:#FFFFFF;}`}</style>
+                <g>
+                  <path className="st0" d="M948.3,294.6c-5,0-10.8-11.1-7.9-14.7c1.8-1.4,1.4-2.9,1.1-3.9c-0.4-2.2,0.4-4.3-0.7-6.1c-2.5,0-3.9,2.9-5,5c-1.8,2.9-8.6,0.7-10-2.2c-1.1-1.4-3.2-2.9-5-2.9c-2.2,0.4-1.4,2.2-1.1,3.6c-1.4,5.7-0.4,12.5-3.6,17.6c-1.8,3.2-5.7,1.4-8.6,0.7c-5.4-2.9-2.5-10.4-3.2-15.4c3.2-3.9-2.9-9,0.7-11.5c2.9-2.9,1.4-7.2,2.2-10.4c0.4-3.2-2.5-6.8,0-9.7c-0.7-7.2-1.8-16.8,2.2-23.3c1.1-3.2-0.4-12.5,4.7-12.5c15.1,0.7,7.2,18.6,14.7,27.2c1.4,6.5,10.8,7.2,9-0.7c-1.4-6.1,5.7-10.8,4.7-17.2c0-1.1,0-2.2,1.1-2.5c3.6-0.7,2.9-5.7,6.5-6.1c6.1-1.8,8.6,3.6,8.2,9h0.4c-2.9,10.8-1.1,22.6-2.5,33.3c-1.4,2.2,2.5,3.6,1.1,5.7c-1.1,8.2-2.9,13.6-1.1,21.1c-1.4,4.3-0.7,9-3.2,12.9C952.6,294.2,950.1,294.2,948.3,294.6z"/>
+                </g>
+              </svg>
+            </div>
           </Link>
         </div>
       </section>
