@@ -146,6 +146,53 @@ export default function Studio() {
 
           </div>
 
+          {/* Videos Section */}
+          <div className="mt-16 pt-12">
+            {/* First Video */}
+            <div className="mb-12">
+              <p className="text-white mb-4 font-serif tracking-wide" style={{fontFamily: "'Special Elite', serif"}}>
+                /// BTS at NF 2014 /// Nathaniel Rateliff
+              </p>
+              <div style={{paddingBottom: '56.25%', position: 'relative', height: 0}}>
+                <iframe
+                  src="https://player.vimeo.com/video/121430086?h=3799c65863&title=0&byline=0&portrait=0"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* Second Video */}
+            <div className="mb-12">
+              <p className="text-white mb-4 font-serif tracking-wide" style={{fontFamily: "'Special Elite', serif"}}>
+                /// BTS at NF 2011 /// Damien Jurado
+              </p>
+              <div style={{paddingBottom: '56.25%', position: 'relative', height: 0}}>
+                <iframe
+                  src="https://player.vimeo.com/video/23657302?h=67a735b0f0&title=0&byline=0&portrait=0"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+
           {/* CTA Section */}
           <div className="text-center mb-12">
             <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
