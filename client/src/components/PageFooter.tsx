@@ -28,7 +28,8 @@ export default function PageFooter() {
           backgroundColor: '#f9f9f9',
           backgroundSize: 'auto',
           backgroundRepeat: 'repeat',
-          paddingTop: 'calc(4rem + 4rem)',
+          paddingTop: 'calc(4rem + 4rem + 4rem)',
+          marginTop: '-4rem',
         }}
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
