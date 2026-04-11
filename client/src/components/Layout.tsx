@@ -29,32 +29,32 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="hidden md:block">
             <ul className="flex items-center justify-end space-x-8">
               <li>
-                <Link href="/studio" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/studio" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   Studio
                 </Link>
               </li>
               <li>
-                <Link href="/gear" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/gear" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   g3ar
                 </Link>
               </li>
               <li>
-                <Link href="/discography" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/discography" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   disc0g
                 </Link>
               </li>
               <li>
-                <Link href="/mastering" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/mastering" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   mast3ring
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/about" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   ab0ut
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
+                <Link href="/contact" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   cont4ct
                 </Link>
               </li>
