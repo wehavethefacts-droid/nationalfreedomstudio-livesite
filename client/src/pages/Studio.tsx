@@ -3,11 +3,11 @@ import PageFooter from "@/components/PageFooter";
 export default function Studio() {
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
-    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
     { label: "/// Drums + bobs & bits", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_drum-corner_01_3ff37c40.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_guitar-amps_01_aeb85bf7.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Wurli Upright /// Melody Grand", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_pianos_01_6a8da621.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Pianos", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_pianos_01_6a8da621.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
     { label: "/// Rack", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_rack_01_a19ed1bb.jpg", colSpan: 1, rowSpan: 1 },
   ];
 
@@ -70,7 +70,7 @@ export default function Studio() {
         />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           {/* Masonry Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
             {/* First row: Full width Main Room */}
             <div className="relative overflow-hidden group col-span-2 md:col-span-4">
               <img
