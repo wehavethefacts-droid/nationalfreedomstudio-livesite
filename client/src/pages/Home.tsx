@@ -23,18 +23,18 @@ export default function Home() {
           />
         </video>
 
-        {/* Logo Overlay - SVG with black background */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none bg-black">
+        {/* Logo Overlay - SVG */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
           <Link href="/studio" className="pointer-events-auto cursor-pointer hover:opacity-75 transition-opacity">
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_3badc998.svg"
               alt="National Freedom Logo"
               style={{
-                width: '2000px',
+                width: '1400px',
                 height: 'auto',
-                maxWidth: '150vw',
+                maxWidth: '100vw',
                 display: 'block',
-                marginLeft: '-500px'
+                marginLeft: '-200px'
               }}
             />
           </Link>
