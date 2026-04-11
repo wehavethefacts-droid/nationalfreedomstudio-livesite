@@ -54,13 +54,14 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer
-        className="relative w-full py-16 md:py-12"
+        className="relative w-full py-16 md:py-24"
         style={{
           backgroundImage: `url('${noiseUrl}'), url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/buffalo-head-pattern_eb17fab1.png')`,
           backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto, auto',
+          backgroundSize: 'auto, 60%',
           backgroundRepeat: 'repeat, repeat-x',
-          backgroundPosition: '0 0, center bottom',
+          backgroundPosition: '0 0, center 60%',
+          backgroundAttachment: 'scroll, scroll',
         }}
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
