@@ -20,17 +20,19 @@ export default function MobileMenu() {
       {/* Mobile Menu Button - Fixed bottom right */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed bottom-6 right-6 z-40 w-16 h-16 flex items-center justify-center"
+        className="md:hidden fixed bottom-6 right-6 z-40 w-20 h-20 flex items-center justify-center"
         style={{
           backgroundColor: "#d97a9a",
-          border: "3px solid black",
+          border: "4px solid black",
+          borderRadius: "20% 18% 22% 19% / 19% 21% 18% 22%",
           fontFamily: "'Special Elite', serif",
-          fontSize: "24px",
+          fontSize: "28px",
           fontWeight: "bold",
           cursor: "pointer",
+          boxShadow: "inset -2px -2px 4px rgba(0,0,0,0.2), inset 2px 2px 4px rgba(0,0,0,0.1)",
         }}
       >
-        {isOpen ? "X" : "≡"}
+        {isOpen ? "X" : "MENU"}
       </button>
 
       {/* Full-screen Mobile Menu */}
@@ -93,14 +95,16 @@ export default function MobileMenu() {
             <div className="flex justify-end">
               <button
                 onClick={() => setIsOpen(false)}
-                className="w-16 h-16 flex items-center justify-center"
+                className="w-20 h-20 flex items-center justify-center"
                 style={{
                   backgroundColor: "#d97a9a",
-                  border: "3px solid black",
+                  border: "4px solid black",
+                  borderRadius: "20% 18% 22% 19% / 19% 21% 18% 22%",
                   fontFamily: "'Special Elite', serif",
-                  fontSize: "24px",
+                  fontSize: "28px",
                   fontWeight: "bold",
                   cursor: "pointer",
+                  boxShadow: "inset -2px -2px 4px rgba(0,0,0,0.2), inset 2px 2px 4px rgba(0,0,0,0.1)",
                 }}
               >
                 X
