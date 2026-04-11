@@ -82,7 +82,7 @@ export default function Home() {
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-6">
-              <ul className="grid grid-cols-3 gap-6 text-xs text-gray-400" style={{fontFamily: "'Special Elite', serif"}}>
+              <ul className="grid grid-cols-3 gap-6 text-sm font-bold text-gray-400" style={{fontFamily: "'Special Elite', serif"}}>
                 <li>
                   <Link href="/studio" className="hover:text-pink-500 transition-colors">
                     ///STUDIO
