@@ -62,7 +62,7 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
 
           {/* Social Icons */}
-          <div className="flex items-center space-x-5">
+          <div className="flex items-center space-x-3 md:space-x-5">
             <a
               href="https://www.instagram.com/nationalfreedomstudio"
               rel="noopener noreferrer"
