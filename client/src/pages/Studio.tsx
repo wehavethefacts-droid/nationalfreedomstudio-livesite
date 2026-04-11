@@ -57,7 +57,7 @@ export default function Studio() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="relative w-full py-12 md:py-16 bg-white">
+      <section className="relative w-full py-12 md:py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           {/* Masonry Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
