@@ -75,16 +75,8 @@ export default function MobileMenu() {
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
-              className="max-h-48 object-contain mb-8"
+              className="max-h-48 object-contain"
             />
-
-            {/* Repeating Text */}
-            <div className="text-center text-xs font-mono text-gray-700 space-y-1 mb-8">
-              <p>NATIONAL FREEDOM</p>
-              <p>NATIONAL FREEDOM</p>
-              <p>NATIONAL FR3EDOM</p>
-              <p>NATIONAL FR33DOM</p>
-            </div>
           </div>
         </div>
       )}
