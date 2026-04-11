@@ -18,110 +18,72 @@ export default function MobileMenu() {
 
   return (
     <>
-      {/* Hamburger Menu Button in Header */}
+      {/* Floating Pink Menu Button in Lower Right */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 right-24 z-[9999] flex flex-col gap-1.5"
+        className="md:hidden fixed bottom-6 right-6 z-[9999] flex items-center justify-center"
         style={{
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: "0",
+          width: '80px',
+          height: '80px',
+          backgroundColor: '#d97a9a',
+          border: '4px solid black',
+          borderRadius: '12px',
+          cursor: 'pointer',
+          fontFamily: "'Special Elite', serif",
+          fontSize: '32px',
+          fontWeight: 'bold',
+          color: 'black',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+          transition: 'all 0.3s ease',
+          transform: isOpen ? 'scale(1.1)' : 'scale(1)',
         }}
       >
-        <div
-          style={{
-            width: "24px",
-            height: "3px",
-            backgroundColor: "black",
-            transition: "all 0.3s ease",
-            transform: isOpen ? "rotate(45deg) translateY(10px)" : "none",
-          }}
-        />
-        <div
-          style={{
-            width: "24px",
-            height: "3px",
-            backgroundColor: "black",
-            transition: "all 0.3s ease",
-            opacity: isOpen ? 0 : 1,
-          }}
-        />
-        <div
-          style={{
-            width: "24px",
-            height: "3px",
-            backgroundColor: "black",
-            transition: "all 0.3s ease",
-            transform: isOpen ? "rotate(-45deg) translateY(-10px)" : "none",
-          }}
-        />
+        {isOpen ? 'X' : '≡'}
       </button>
 
-      {/* Full-screen Mobile Menu */}
+      {/* Full-screen Mobile Menu Overlay */}
       {isOpen && (
         <div
-          className="md:hidden fixed inset-0 z-30 flex flex-col items-center justify-center"
+          className="md:hidden fixed inset-0 z-[9998] overflow-y-auto"
           style={{
             backgroundImage: `url('${noiseUrl}')`,
-            backgroundColor: "#f9f9f9",
-            backgroundSize: "auto",
-            backgroundRepeat: "repeat",
+            backgroundColor: '#f5f5f5',
+            backgroundSize: 'auto',
+            backgroundRepeat: 'repeat',
           }}
-          onClick={() => setIsOpen(false)}
         >
-          <div
-            className="w-full h-full flex flex-col items-center justify-center gap-8 p-8"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
             {/* Navigation Links */}
-            <nav className="flex flex-col gap-6 text-center">
+            <nav className="mb-12 text-center space-y-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-bold"
+                  className="block text-2xl font-bold transition-colors"
                   style={{
                     fontFamily: "'Special Elite', serif",
-                    color: "black",
-                    textDecoration: "none",
-                    transition: "color 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "#d97a9a";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = "black";
+                    color: '#000',
                   }}
                 >
-                  {link.label}
+                  {link.label.replace('/// ', '')}
                 </Link>
               ))}
             </nav>
 
-            {/* Buffalo Image and Text */}
-            <div className="flex flex-col items-center justify-center mt-8">
-              <img
-                src={buffaloUrl}
-                alt="Buffalo Head"
-                className="w-32 h-32 object-contain mb-4"
-              />
-              <div
-                className="text-center space-y-0"
-                style={{
-                  fontFamily: "'Special Elite', serif",
-                  fontSize: "12px",
-                  fontWeight: "bold",
-                  letterSpacing: "1px",
-                  lineHeight: "1.3",
-                }}
-              >
-                <p>NATIONAL FREEDOM</p>
-                <p>NATIONAL FREEDOM</p>
-                <p>NATIONAL FR3EDOM</p>
-                <p>NATIONAL FR33DOM</p>
-              </div>
+            {/* Buffalo Image */}
+            <img
+              src={buffaloUrl}
+              alt="Buffalo Head"
+              className="max-h-48 object-contain mb-8"
+            />
+
+            {/* Repeating Text */}
+            <div className="text-center text-xs font-mono text-gray-700 space-y-1 mb-8">
+              <p>NATIONAL FREEDOM</p>
+              <p>NATIONAL FREEDOM</p>
+              <p>NATIONAL FR3EDOM</p>
+              <p>NATIONAL FR33DOM</p>
             </div>
           </div>
         </div>
