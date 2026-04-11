@@ -3,6 +3,7 @@ import PageFooter from "@/components/PageFooter";
 export default function Studio() {
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
+    { label: "/// Control Room", url: "https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg", colSpan: 2, rowSpan: 1 },
     { label: "/// Drums + bobs & bits", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_drum-corner_01_3ff37c40.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_guitar-amps_01_aeb85bf7.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
@@ -39,21 +40,6 @@ export default function Studio() {
         </div>
       </section>
 
-      {/* Full-Width Control Room Image */}
-      <section className="relative w-full h-[550px] md:h-[700px] overflow-hidden">
-        <img
-          src="https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg"
-          alt="Control Room"
-          className="w-full h-full object-cover"
-        />
-        {/* Text Overlay */}
-        <div className="absolute bottom-0 right-0 p-4 md:p-6">
-          <p className="text-white text-lg md:text-2xl font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
-            /// Control Room
-          </p>
-        </div>
-      </section>
-
       {/* Photo Gallery Section */}
       <section className="relative w-full py-12 md:py-16 bg-black">
         {/* Grainy Texture Overlay */}
@@ -70,8 +56,8 @@ export default function Studio() {
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           {/* Masonry Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[200px] md:auto-rows-[250px]">
-            {/* First row: Drums and Guitar */}
-            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+            {/* First row: Control Room full-width */}
+            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
               <img
                 src={studioPhotos[0].url}
                 alt={studioPhotos[0].label}
@@ -85,6 +71,7 @@ export default function Studio() {
               </div>
             </div>
 
+            {/* Second row: Drums and Guitar */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[1].url}
@@ -99,8 +86,7 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Second row: Full width Main Room */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[2].url}
                 alt={studioPhotos[2].label}
@@ -114,8 +100,8 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Third row: Pianos and Rack */}
-            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+            {/* Third row: Full width Main Room */}
+            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
               <img
                 src={studioPhotos[3].url}
                 alt={studioPhotos[3].label}
@@ -129,6 +115,7 @@ export default function Studio() {
               </div>
             </div>
 
+            {/* Fourth row: Pianos and Rack */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[4].url}
@@ -139,6 +126,20 @@ export default function Studio() {
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[4].label}
+                </p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[5].url}
+                alt={studioPhotos[5].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[5].label}
                 </p>
               </div>
             </div>
