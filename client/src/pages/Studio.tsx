@@ -5,9 +5,9 @@ export default function Studio() {
   const studioPhotos = [
     { label: "/// Drums + bobs & bits", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_drum-corner_01_3ff37c40.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_guitar-amps_01_aeb85bf7.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
     { label: "/// Wurli Upright /// Melody Grand", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_pianos_01_6a8da621.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Rack", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_rack_01_a19ed1bb.jpg", colSpan: 1, rowSpan: 1 },
-    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
   ];
 
   return (
@@ -99,8 +99,8 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Second row: Pianos */}
-            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+            {/* Second row: Full width Main Room */}
+            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
               <img
                 src={studioPhotos[2].url}
                 alt={studioPhotos[2].label}
@@ -114,6 +114,7 @@ export default function Studio() {
               </div>
             </div>
 
+            {/* Third row: Pianos and Rack */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[3].url}
@@ -128,8 +129,7 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Third row: Full width Main Room */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[4].url}
                 alt={studioPhotos[4].label}
