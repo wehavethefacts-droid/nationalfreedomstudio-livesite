@@ -33,7 +33,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "black",
+            backgroundColor: "white",
             transition: "all 0.3s ease",
             transform: isOpen ? "rotate(45deg) translateY(10px)" : "none",
           }}
@@ -42,7 +42,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "black",
+            backgroundColor: "white",
             transition: "all 0.3s ease",
             opacity: isOpen ? 0 : 1,
           }}
@@ -51,7 +51,7 @@ export default function MobileMenu() {
           style={{
             width: "24px",
             height: "3px",
-            backgroundColor: "black",
+            backgroundColor: "white",
             transition: "all 0.3s ease",
             transform: isOpen ? "rotate(-45deg) translateY(-10px)" : "none",
           }}
