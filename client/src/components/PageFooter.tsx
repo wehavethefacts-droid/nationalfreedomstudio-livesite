@@ -86,18 +86,18 @@ export default function PageFooter() {
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>
-            <div className="text-xs font-mono text-gray-400 mt-4 pt-4 border-t border-gray-600">
-              <p>National Freedom is a landmark studio where some of the most original records of the last decade were made.</p>
-            </div>
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}
-          <div className="hidden md:flex items-end justify-center">
+          <div className="hidden md:flex flex-col items-center justify-center">
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
               className="max-h-96 object-contain"
             />
+            <div className="text-xs font-mono text-gray-400 mt-4 text-center">
+              <p>National Freedom is a landmark studio where some of the most original records of the last decade were made.</p>
+            </div>
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
@@ -108,6 +108,9 @@ export default function PageFooter() {
               className="w-full max-w-xs object-contain"
               style={{maxHeight: '300px'}}
             />
+            <div className="text-xs font-mono text-gray-400 mt-4 text-center">
+              <p>National Freedom is a landmark studio where some of the most original records of the last decade were made.</p>
+            </div>
           </div>
         </div>
       </section>
