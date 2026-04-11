@@ -1,5 +1,7 @@
 import PageFooter from "@/components/PageFooter";
 
+const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+
 export default function Gear() {
   const gearCategories = [
     {
@@ -98,23 +100,37 @@ export default function Gear() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full py-12 md:py-16 bg-white">
+      <section className="relative w-full py-12 md:py-16" style={{
+        backgroundImage: `url('${noiseUrl}')`,
+        backgroundColor: '#f9f9f9',
+        backgroundSize: 'auto',
+        backgroundRepeat: 'repeat',
+      }}>
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="space-y-12">
-            {gearCategories.map((category, idx) => (
-              <div key={idx} className="border-b border-gray-300 pb-8 last:border-b-0">
-                <h3 className="text-lg md:text-xl font-bold mb-6 text-black" style={{fontFamily: "'Special Elite', serif"}}>
-                  {category.title}
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+            {/* Left Column - Category Names */}
+            <div className="space-y-0">
+              {gearCategories.map((category, idx) => (
+                <div key={idx} className="py-6 md:py-8 border-b border-gray-300 last:border-b-0 pr-4 md:pr-8">
+                  <h3 className="text-base md:text-lg font-bold text-black" style={{fontFamily: "'Special Elite', serif"}}>
+                    {category.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+
+            {/* Right Column - Items in Two Sub-Columns */}
+            <div className="md:col-span-3 pl-0 md:pl-8">
+              {gearCategories.map((category, idx) => (
+                <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0 py-6 md:py-8 border-b border-gray-300 last:border-b-0">
                   {category.items.map((item, itemIdx) => (
                     <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace"}}>
                       {item}
                     </div>
                   ))}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* CTA Section */}
