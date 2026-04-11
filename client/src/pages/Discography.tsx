@@ -177,11 +177,11 @@ export default function Discography() {
         <div className="max-w-6xl mx-auto px-4 md:px-12">
           <div className="space-y-8">
             {discography.map((artist, idx) => (
-              <div key={idx} className="border-b border-gray-300 pb-8 last:border-b-0">
-                <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div key={idx} className="border-b border-gray-300 pb-6 last:border-b-0">
+                <h3 className="text-lg md:text-xl font-bold mb-2" style={{fontFamily: "'Special Elite', serif"}}>
                   {artist.artist}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {artist.albums.map((album, albumIdx) => (
                     <div key={albumIdx} className="flex items-start">
                       <span className="text-gray-400 mr-3 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
