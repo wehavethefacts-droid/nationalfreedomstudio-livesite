@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 
 export default function Home() {
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-white_083b663c.svg";
+  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
 
   return (
@@ -15,10 +15,10 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://nationalfreedom.studio/visuals/NF_control_01.jpg"
+          poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_0c8d15f9.jpg"
         >
           <source
-            src="https://nationalfreedom.studio/visuals/NF_home-vid_01_sm.mp4"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
             type="video/mp4"
           />
         </video>
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
           <Link href="/studio">
             <img
-              src="https://nationalfreedom.studio/visuals/NF_logo_white.svg"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_349cc028.svg"
               alt="National Freedom Studio"
               className="max-w-[80vw] w-screen rotate-6 cursor-pointer hover:opacity-80 transition-opacity"
             />
@@ -112,7 +112,7 @@ export default function Home() {
           {/* Buffalo Background Image (Right side on desktop) */}
           <div className="hidden md:flex items-end justify-center">
             <img
-              src="https://nationalfreedom.studio/visuals/NF_buffalo-head_01.png"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
               alt="Buffalo Head"
               className="max-h-96 object-contain"
             />
