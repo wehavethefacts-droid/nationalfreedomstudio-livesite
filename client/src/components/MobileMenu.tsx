@@ -23,17 +23,17 @@ export default function MobileMenu() {
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden fixed bottom-6 right-6 z-[9999] flex items-center justify-center"
         style={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
           backgroundColor: '#d97a9a',
-          border: '4px solid black',
-          borderRadius: '12px',
+          border: 'none',
+          borderRadius: '8px 12px 10px 9px',
           cursor: 'pointer',
           fontFamily: "'Special Elite', serif",
-          fontSize: '32px',
+          fontSize: '28px',
           fontWeight: 'bold',
           color: 'black',
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           transition: 'all 0.3s ease',
           transform: isOpen ? 'scale(1.1)' : 'scale(1)',
         }}
