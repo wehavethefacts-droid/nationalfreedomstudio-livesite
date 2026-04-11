@@ -74,7 +74,7 @@ export default function Home() {
               National Freedom is a landmark studio where some of the most original records of the last decade were made.
             </p>
             <p className="mt-4">
-              <Link href="/studio" className="text-red-500 hover:text-red-400 text-sm font-mono">
+              <Link href="/studio" className="text-pink-500 hover:text-pink-400 text-sm font-mono">
                 More →→→
               </Link>
             </p>
@@ -84,32 +84,32 @@ export default function Home() {
             <nav className="pt-2 pb-6">
               <ul className="grid grid-cols-3 gap-6 text-xs font-mono text-gray-400">
                 <li>
-                  <Link href="/studio" className="hover:text-white transition-colors">
+                  <Link href="/studio" className="hover:text-pink-500 transition-colors">
                     ///STUDIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="hover:text-white transition-colors">
+                  <Link href="/gear" className="hover:text-pink-500 transition-colors">
                     ///G3AR
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="hover:text-white transition-colors">
+                  <Link href="/discography" className="hover:text-pink-500 transition-colors">
                     ///DISC0G
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="hover:text-white transition-colors">
+                  <Link href="/mastering" className="hover:text-pink-500 transition-colors">
                     ///MAST3RING
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-white transition-colors">
+                  <Link href="/about" className="hover:text-pink-500 transition-colors">
                     ///AB0UT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">
+                  <Link href="/contact" className="hover:text-pink-500 transition-colors">
                     ///C0NT4CT
                   </Link>
                 </li>
