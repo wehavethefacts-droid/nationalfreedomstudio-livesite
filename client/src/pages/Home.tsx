@@ -33,7 +33,9 @@ export default function Home() {
                 width: '1200px',
                 height: 'auto',
                 maxWidth: '95vw',
-                display: 'block'
+                display: 'block',
+                filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.5))',
+                opacity: 1
               }}
             />
           </Link>
