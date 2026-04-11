@@ -120,9 +120,9 @@ export default function Gear() {
 
                   {/* Right Column - Items in Two Sub-Columns */}
                   <div className="md:col-span-3 pl-0 md:pl-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                       {category.items.map((item, itemIdx) => (
-                        <div key={itemIdx} className="text-sm md:text-base text-gray-700 font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <div key={itemIdx} className="text-sm md:text-base text-gray-700 font-bold" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5em', textIndent: '-1.5em'}}>
                           {item}
                         </div>
                       ))}
