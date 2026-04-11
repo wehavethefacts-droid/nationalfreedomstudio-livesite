@@ -200,7 +200,7 @@ export default function Studio() {
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-3 bg-pink-400 text-black font-bold hover:bg-pink-300 transition-colors"
+              className="inline-block px-8 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors"
               style={{fontFamily: "'Special Elite', serif"}}
             >
               CONTACT
