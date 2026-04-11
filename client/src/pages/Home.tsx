@@ -43,7 +43,7 @@ export default function Home() {
 
       {/* Backslash Divider - positioned to span hero and footer */}
       <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full -mt-1 md:-mt-2 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x bg-black"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundSize: 'auto 100%',
@@ -56,10 +56,11 @@ export default function Home() {
       <footer
         className="relative w-full py-16 md:py-12"
         style={{
-          backgroundImage: `url('${noiseUrl}')`,
+          backgroundImage: `url('${noiseUrl}'), url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/buffalo-head-pattern_eb17fab1.png')`,
           backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto',
-          backgroundRepeat: 'repeat',
+          backgroundSize: 'auto, auto',
+          backgroundRepeat: 'repeat, repeat-x',
+          backgroundPosition: '0 0, center bottom',
         }}
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
