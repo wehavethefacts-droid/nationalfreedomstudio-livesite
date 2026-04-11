@@ -66,7 +66,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
           {/* Studio Info Box */}
-          <div className="max-w-sm mt-auto md:ml-auto mx-auto p-6 bg-black">
+          <div className="max-w-2xl mt-auto md:ml-auto mx-auto p-4 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
@@ -78,10 +78,10 @@ export default function Home() {
                 More →→→
               </Link>
             </p>
-            <hr className="border-gray-600 mt-6 mb-6" />
+            <hr className="border-gray-600 mt-3 mb-3" />
 
             {/* Footer Navigation */}
-            <nav className="pt-2 pb-6">
+            <nav className="pt-1 pb-2">
               <ul className="grid grid-cols-3 gap-6 text-sm font-bold text-gray-400" style={{fontFamily: "'Special Elite', serif"}}>
                 <li>
                   <Link href="/studio" className="hover:text-pink-500 transition-colors">
@@ -115,7 +115,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <hr className="border-gray-600 mt-6 mb-6" />
+            <hr className="border-gray-600 mt-3 mb-3" />
             <div className="text-xs font-mono text-gray-500 space-y-1">
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
