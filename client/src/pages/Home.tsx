@@ -70,7 +70,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
-            <p className="mb-0 text-white text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>
+            <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
               National Freedom is a landmark studio where some of the most original records of the last decade were made.
             </p>
             <p className="mt-4">
