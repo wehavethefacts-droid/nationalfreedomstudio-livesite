@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Layout from "./components/Layout";
+import MobileMenu from "./components/MobileMenu";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Studio from "./pages/Studio";
@@ -16,8 +17,10 @@ import Contact from "./pages/Contact";
 
 function Router() {
   return (
-    <Layout>
-      <Switch>
+    <>
+      <MobileMenu />
+      <Layout>
+        <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/studio"} component={Studio} />
         <Route path={"/gear"} component={Gear} />
@@ -28,8 +31,9 @@ function Router() {
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
-      </Switch>
-    </Layout>
+        </Switch>
+      </Layout>
+    </>
   );
 }
 
