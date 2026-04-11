@@ -42,7 +42,7 @@ export default function Studio() {
       </section>
 
       {/* Full-Width Control Room Image */}
-      <section className="relative w-full h-[400px] md:h-[500px] overflow-visible z-20 -mt-16 md:-mt-20">
+      <section className="relative w-full h-[400px] md:h-[500px] overflow-visible z-20 -mt-16 md:-mt-8">
         <img
           src="https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg"
           alt="Control Room"
