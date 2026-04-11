@@ -29,7 +29,8 @@ export default function Home() {
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_960f51cf.svg"
               alt="National Freedom Studio"
-              className="max-w-3xl w-full cursor-pointer hover:opacity-80 transition-opacity"
+              className="w-screen h-screen object-contain cursor-pointer hover:opacity-75 transition-opacity"
+              style={{ opacity: 0.9, filter: 'brightness(1.1)' }}
             />
           </Link>
         </div>
