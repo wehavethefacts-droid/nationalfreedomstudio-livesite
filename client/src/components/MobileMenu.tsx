@@ -2,89 +2,118 @@ import { useState } from "react";
 import { Link } from "wouter";
 
 const buffaloUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png";
+const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "STUDIO", href: "/studio" },
-    { label: "G3AR", href: "/gear" },
-    { label: "DISCOG", href: "/discography" },
-    { label: "MAST3RING", href: "/mastering" },
-    { label: "ABOUT", href: "/about" },
-    { label: "CONT4CT", href: "/contact" },
+    { label: "/// STUDIO", href: "/studio" },
+    { label: "/// G3AR", href: "/gear" },
+    { label: "/// DISCOG", href: "/discography" },
+    { label: "/// MAST3RING", href: "/mastering" },
+    { label: "/// AB0UT", href: "/about" },
+    { label: "/// C0NT4CT", href: "/contact" },
   ];
 
   return (
     <>
-      {/* Mobile Menu Button - Fixed bottom right */}
+      {/* Hamburger Menu Button in Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed bottom-6 right-6 z-40 flex items-center justify-center"
+        className="md:hidden fixed top-4 right-4 z-40 flex flex-col gap-1.5"
         style={{
-          width: "80px",
-          height: "80px",
-          backgroundColor: "#d97a9a",
-          border: "5px solid black",
-          borderRadius: "25% 20% 28% 22% / 22% 28% 20% 25%",
-          fontFamily: "'Special Elite', serif",
-          fontSize: "32px",
-          fontWeight: "900",
+          background: "none",
+          border: "none",
           cursor: "pointer",
-          position: "relative",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
-          transition: "transform 0.2s ease",
+          padding: "8px",
         }}
       >
-        {isOpen ? "X" : "MENU"}
+        <div
+          style={{
+            width: "24px",
+            height: "3px",
+            backgroundColor: "black",
+            transition: "all 0.3s ease",
+            transform: isOpen ? "rotate(45deg) translateY(10px)" : "none",
+          }}
+        />
+        <div
+          style={{
+            width: "24px",
+            height: "3px",
+            backgroundColor: "black",
+            transition: "all 0.3s ease",
+            opacity: isOpen ? 0 : 1,
+          }}
+        />
+        <div
+          style={{
+            width: "24px",
+            height: "3px",
+            backgroundColor: "black",
+            transition: "all 0.3s ease",
+            transform: isOpen ? "rotate(-45deg) translateY(-10px)" : "none",
+          }}
+        />
       </button>
 
       {/* Full-screen Mobile Menu */}
       {isOpen && (
         <div
-          className="md:hidden fixed inset-0 z-30 overflow-y-auto"
+          className="md:hidden fixed inset-0 z-30 flex flex-col items-center justify-center"
           style={{
-            backgroundImage: "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\"><filter id=\"noise\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"4\" /></filter><rect width=\"100\" height=\"100\" fill=\"%23f5f5f5\" filter=\"url(%23noise)\" opacity=\"0.5\"/></svg>')",
-            backgroundColor: "#f5f5f5",
+            backgroundImage: `url('${noiseUrl}')`,
+            backgroundColor: "#f9f9f9",
+            backgroundSize: "auto",
+            backgroundRepeat: "repeat",
           }}
+          onClick={() => setIsOpen(false)}
         >
-          <div className="w-full h-full flex flex-col justify-between p-6">
+          <div
+            className="w-full h-full flex flex-col items-center justify-center gap-8 p-8"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Navigation Links */}
-            <nav className="mt-8">
-              <ul className="space-y-6">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href}>
-                      <a
-                        onClick={() => setIsOpen(false)}
-                        className="text-2xl font-bold transition-colors"
-                        style={{
-                          fontFamily: "'Special Elite', serif",
-                          color: "#000",
-                        }}
-                      >
-                        {link.label}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <nav className="flex flex-col gap-6 text-center">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-bold"
+                  style={{
+                    fontFamily: "'Special Elite', serif",
+                    color: "black",
+                    textDecoration: "none",
+                    transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = "#d97a9a";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = "black";
+                  }}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
 
-            {/* Center Content - Buffalo and Text */}
-            <div className="flex flex-col items-center justify-center flex-1">
+            {/* Buffalo Image and Text */}
+            <div className="flex flex-col items-center justify-center mt-8">
               <img
                 src={buffaloUrl}
                 alt="Buffalo Head"
-                className="w-40 h-40 object-contain mb-6"
+                className="w-32 h-32 object-contain mb-4"
               />
               <div
                 className="text-center space-y-0"
                 style={{
                   fontFamily: "'Special Elite', serif",
-                  fontSize: "16px",
+                  fontSize: "12px",
                   fontWeight: "bold",
-                  letterSpacing: "2px",
+                  letterSpacing: "1px",
                   lineHeight: "1.3",
                 }}
               >
@@ -93,31 +122,6 @@ export default function MobileMenu() {
                 <p>NATIONAL FR3EDOM</p>
                 <p>NATIONAL FR33DOM</p>
               </div>
-            </div>
-
-            {/* Close Button */}
-            <div className="flex justify-end">
-              <button
-                onClick={() => setIsOpen(false)}
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  backgroundColor: "#d97a9a",
-                  border: "5px solid black",
-                  borderRadius: "25% 20% 28% 22% / 22% 28% 20% 25%",
-                  fontFamily: "'Special Elite', serif",
-                  fontSize: "32px",
-                  fontWeight: "900",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
-                  transition: "transform 0.2s ease",
-                }}
-              >
-                X
-              </button>
             </div>
           </div>
         </div>
