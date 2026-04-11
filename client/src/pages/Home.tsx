@@ -46,7 +46,6 @@ export default function Home() {
         className="relative w-full -mt-32 md:-mt-48 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
-          backgroundColor: '#f9f9f9',
           backgroundSize: 'auto 100%',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'repeat-x',
