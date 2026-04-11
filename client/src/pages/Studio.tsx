@@ -194,7 +194,7 @@ export default function Studio() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mb-24 mt-12">
+          <div className="text-center mb-48 mt-12">
             <p className="text-xl md:text-5xl font-bold mb-6 text-white" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
