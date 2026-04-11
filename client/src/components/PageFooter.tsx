@@ -86,6 +86,9 @@ export default function PageFooter() {
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>
+            <div className="text-xs font-mono text-gray-400 mt-4 pt-4 border-t border-gray-600">
+              <p>National Freedom is a landmark studio where some of the most original records of the last decade were made.</p>
+            </div>
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}

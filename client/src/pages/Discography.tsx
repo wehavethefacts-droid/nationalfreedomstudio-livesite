@@ -164,7 +164,7 @@ export default function Discography() {
       <section className="relative w-full min-h-auto md:min-h-[60vh] flex items-center justify-start bg-black py-6 md:py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
-            /// DISC0G
+            /// DISCOGRAPHY
           </h1>
           <p className="text-white text-base md:text-lg font-bold max-w-2xl" style={{fontFamily: "'Inconsolata', monospace"}}>
             These projects were recorded (or mostly recorded or maybe mixed) at National Freedom.
