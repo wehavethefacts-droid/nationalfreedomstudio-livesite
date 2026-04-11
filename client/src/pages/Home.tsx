@@ -33,7 +33,8 @@ export default function Home() {
                 width: '1200px',
                 height: 'auto',
                 maxWidth: '90vw',
-                display: 'block'
+                display: 'block',
+                transform: 'rotate(8deg)'
               }}
             />
           </Link>
