@@ -107,30 +107,30 @@ export default function Gear() {
         backgroundRepeat: 'repeat',
       }}>
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
-            {/* Left Column - Category Names */}
-            <div className="space-y-0">
-              {gearCategories.map((category, idx) => (
-                <div key={idx} className="py-6 md:py-8 border-b border-gray-300 last:border-b-0 pr-4 md:pr-8">
-                  <h3 className="text-base md:text-lg font-bold text-black" style={{fontFamily: "'Special Elite', serif"}}>
-                    {category.title}
-                  </h3>
-                </div>
-              ))}
-            </div>
+          <div className="space-y-0">
+            {gearCategories.map((category, idx) => (
+              <div key={idx} className="border-b border-gray-300 last:border-b-0">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-0 py-6 md:py-8">
+                  {/* Left Column - Category Name */}
+                  <div className="pr-4 md:pr-8">
+                    <h3 className="text-base md:text-lg font-bold text-black" style={{fontFamily: "'Special Elite', serif"}}>
+                      {category.title}
+                    </h3>
+                  </div>
 
-            {/* Right Column - Items in Two Sub-Columns */}
-            <div className="md:col-span-3 pl-0 md:pl-8">
-              {gearCategories.map((category, idx) => (
-                <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0 py-6 md:py-8 border-b border-gray-300 last:border-b-0">
-                  {category.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace"}}>
-                      {item}
+                  {/* Right Column - Items in Two Sub-Columns */}
+                  <div className="md:col-span-3 pl-0 md:pl-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
+                      {category.items.map((item, itemIdx) => (
+                        <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace"}}>
+                          {item}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           {/* CTA Section */}
