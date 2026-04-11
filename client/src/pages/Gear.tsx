@@ -100,19 +100,19 @@ export default function Gear() {
       {/* Content Section */}
       <section className="relative w-full py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="space-y-12">
             {gearCategories.map((category, idx) => (
-              <div key={idx} className="mb-8">
-                <h3 className="text-lg md:text-xl font-bold mb-4 font-mono" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div key={idx} className="border-b border-gray-300 pb-8 last:border-b-0">
+                <h3 className="text-lg md:text-xl font-bold mb-6 text-black" style={{fontFamily: "'Special Elite', serif"}}>
                   {category.title}
                 </h3>
-                <ul className="space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {category.items.map((item, itemIdx) => (
-                    <li key={itemIdx} className="text-sm md:text-base text-gray-800" style={{fontFamily: "'Inconsolata', monospace"}}>
+                    <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace"}}>
                       {item}
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
