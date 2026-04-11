@@ -26,22 +26,16 @@ export default function Home() {
         {/* Logo Overlay - SVG */}
         <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
           <Link href="/studio" className="pointer-events-auto cursor-pointer hover:opacity-75 transition-opacity">
-            <div style={{
-              fontSize: '200px',
-              fontWeight: 'bold',
-              color: 'white',
-              lineHeight: '1',
-              fontFamily: 'Courier Prime, monospace',
-              textShadow: '4px 4px 12px rgba(0,0,0,0.8)',
-              letterSpacing: '0.05em',
-              textAlign: 'center',
-              whiteSpace: 'pre-wrap',
-              maxWidth: '90vw'
-            }}>
-              NATIONAL FREEDOM
-              NATIONAL FREEDOM
-              NATIONAL FREEDOM
-            </div>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_18c7af63.svg"
+              alt="National Freedom Logo"
+              style={{
+                width: '1200px',
+                height: 'auto',
+                maxWidth: '90vw',
+                display: 'block'
+              }}
+            />
           </Link>
         </div>
       </section>
