@@ -30,8 +30,9 @@ export default function Home() {
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 990 399.6"
-              className="w-full h-full"
-              style={{ maxWidth: '100%', maxHeight: '100%' }}
+              className="w-full h-auto"
+              style={{ maxWidth: '100%', maxHeight: '80vh', objectFit: 'contain' }}
+              preserveAspectRatio="xMidYMid meet"
             >
               <style>{`.st0{fill:#FFFFFF;}`}</style>
               <g>
