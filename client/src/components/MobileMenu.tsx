@@ -25,8 +25,8 @@ export default function MobileMenu() {
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden fixed bottom-6 right-6 z-[9999]"
         style={{
-          width: '90px',
-          height: '90px',
+          width: '63px',
+          height: '63px',
           backgroundColor: 'transparent',
           border: 'none',
           cursor: 'pointer',
