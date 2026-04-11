@@ -18,27 +18,66 @@ export default function MobileMenu() {
 
   return (
     <>
-      {/* Floating Pink Menu Button in Lower Right */}
+      {/* Floating Pink Menu Button in Lower Right - Distressed Frame Design */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden fixed bottom-6 right-6 z-[9999] flex items-center justify-center"
         style={{
-          width: '60px',
-          height: '60px',
-          backgroundColor: '#d97a9a',
+          width: '140px',
+          height: '140px',
+          backgroundColor: 'transparent',
           border: 'none',
-          borderRadius: '8px 12px 10px 9px',
           cursor: 'pointer',
-          fontFamily: "'Special Elite', serif",
-          fontSize: '28px',
-          fontWeight: 'bold',
-          color: 'black',
-          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           transition: 'all 0.3s ease',
-          transform: isOpen ? 'scale(1.1)' : 'scale(1)',
+          transform: isOpen ? 'scale(1.05)' : 'scale(1)',
+          padding: 0,
         }}
       >
-        {isOpen ? 'X' : '≡'}
+        <svg
+          width="140"
+          height="140"
+          viewBox="0 0 140 140"
+          style={{
+            filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25))',
+          }}
+        >
+          {/* Outer pink background with organic wavy edges */}
+          <path
+            d="M 15 25 Q 18 12 28 15 Q 38 18 48 12 Q 58 8 70 12 Q 82 8 92 15 Q 102 18 125 20 L 128 35 Q 132 48 130 65 Q 132 82 128 100 L 125 120 Q 102 128 92 125 Q 82 132 70 128 Q 58 132 48 128 Q 38 132 28 125 Q 18 128 15 120 L 12 100 Q 8 82 10 65 Q 8 48 12 35 Z"
+            fill="#d97a9a"
+            stroke="none"
+          />
+
+          {/* Thick black rectangular frame with rounded corners */}
+          <g stroke="black" strokeWidth="18" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            {/* Top border */}
+            <path d="M 25 35 Q 35 28 50 32 Q 70 28 90 32 Q 105 28 115 35" />
+            {/* Right border */}
+            <path d="M 115 35 Q 122 50 120 70 Q 122 90 115 105" />
+            {/* Bottom border */}
+            <path d="M 115 105 Q 105 112 90 108 Q 70 112 50 108 Q 35 112 25 105" />
+            {/* Left border */}
+            <path d="M 25 105 Q 18 90 20 70 Q 18 50 25 35" />
+          </g>
+
+          {/* Center text - MENU or X */}
+          <text
+            x="70"
+            y="75"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="48"
+            fontWeight="bold"
+            fontFamily="'Special Elite', serif"
+            fill="black"
+            style={{
+              pointerEvents: 'none',
+              userSelect: 'none',
+            }}
+          >
+            {isOpen ? 'X' : 'MENU'}
+          </text>
+        </svg>
       </button>
 
       {/* Full-screen Mobile Menu Overlay */}
