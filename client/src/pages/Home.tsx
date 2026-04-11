@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-visible bg-black">
+      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
         {/* Video Background */}
         <video
           autoPlay
@@ -24,12 +24,12 @@ export default function Home() {
         </video>
 
         {/* Logo Overlay */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
+        <div className="absolute inset-0 z-10 flex items-center justify-center">
           <Link href="/studio">
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_349cc028.svg"
               alt="National Freedom Studio"
-              className="max-w-[80vw] w-screen rotate-6 cursor-pointer hover:opacity-80 transition-opacity"
+              className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
             />
           </Link>
         </div>
