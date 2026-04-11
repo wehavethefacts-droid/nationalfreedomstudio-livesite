@@ -163,7 +163,7 @@ export default function Discography() {
       {/* Hero Section */}
       <section className="relative w-full min-h-auto md:min-h-[60vh] flex items-center justify-start bg-black py-6 md:py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{fontFamily: "'Special Elite', serif"}}>
             /// DISCOGRAPHY
           </h1>
           <p className="text-white text-base md:text-lg font-bold max-w-2xl" style={{fontFamily: "'Inconsolata', monospace"}}>
@@ -173,15 +173,15 @@ export default function Discography() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full py-8 md:py-12 bg-white">
+      <section className="relative w-full py-4 md:py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="space-y-8">
+          <div className="space-y-4">
             {discography.map((artist, idx) => (
-              <div key={idx} className="border-b border-gray-300 pb-6 last:border-b-0">
+              <div key={idx} className="border-b border-gray-300 pb-4 last:border-b-0">
                 <h3 className="text-lg md:text-xl font-bold mb-2" style={{fontFamily: "'Special Elite', serif"}}>
                   {artist.artist}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {artist.albums.map((album, albumIdx) => (
                     <div key={albumIdx} className="flex items-start">
                       <span className="text-gray-400 mr-3 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
