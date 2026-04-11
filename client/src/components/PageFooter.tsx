@@ -11,11 +11,11 @@ export default function PageFooter() {
       <div
         className="relative w-full mt-0 md:mt-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
-          backgroundImage: `url('${backslashUrl}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'bottom',
-          backgroundRepeat: 'repeat-x',
-          backgroundAttachment: 'scroll',
+          backgroundImage: `url('${noiseUrl}'), url('${backslashUrl}')`,
+          backgroundSize: 'auto, auto 100%',
+          backgroundPosition: 'top left, bottom',
+          backgroundRepeat: 'repeat, repeat-x',
+          backgroundAttachment: 'scroll, scroll',
           backgroundColor: '#f9f9f9',
         }}
       />
@@ -28,7 +28,7 @@ export default function PageFooter() {
           backgroundColor: '#f9f9f9',
           backgroundSize: 'auto',
           backgroundRepeat: 'repeat',
-          paddingTop: 'calc(4rem + 4rem + 4rem)',
+          paddingTop: 'calc(4rem + 4rem)',
           marginTop: '-4rem',
         }}
       >
