@@ -4,19 +4,21 @@ export default function Studio() {
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
   
-  // Studio photos with labels
+  // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
-    { label: "/// Control Room", url: "https://nationalfreedom.studio/visuals/NF_control_01.jpg" },
-    { label: "/// Main Room", url: "https://nationalfreedom.studio/visuals/NF_main_01.jpg" },
-    { label: "/// Drums + bobs & bits", url: "https://nationalfreedom.studio/visuals/NF_drums_01.jpg" },
-    { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://nationalfreedom.studio/visuals/NF_guitar_01.jpg" },
-    { label: "/// Wurli Upright /// Melody Grand", url: "https://nationalfreedom.studio/visuals/NF_pianos_01.jpg" },
+    { label: "/// Rack", url: "https://nationalfreedom.studio/visuals/NF_rack_01.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Studer A80 VU MKIV", url: "https://nationalfreedom.studio/visuals/NF_studer_01.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Main Room", url: "https://nationalfreedom.studio/visuals/NF_main_01.jpg", colSpan: 2, rowSpan: 1 },
+    { label: "/// Drums + bobs & bits", url: "https://nationalfreedom.studio/visuals/NF_drums_01.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://nationalfreedom.studio/visuals/NF_guitar_01.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Wurli Upright /// Melody Grand", url: "https://nationalfreedom.studio/visuals/NF_pianos_01.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Pianos", url: "https://nationalfreedom.studio/visuals/NF_pianos_02.jpg", colSpan: 1, rowSpan: 1 },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section with Overlay Content */}
-      <section className="relative w-full min-h-screen md:min-h-[80vh] flex items-center justify-start overflow-hidden bg-black">
+      <section className="relative w-full min-h-screen md:min-h-[70vh] flex items-center justify-start overflow-hidden bg-black">
         {/* Background Image */}
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
@@ -30,8 +32,8 @@ export default function Studio() {
         <div className="absolute inset-0 bg-black/40 z-5" />
 
         {/* Content Overlay */}
-        <div className="relative z-10 px-6 md:px-12 py-12 max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em'}}>
+        <div className="relative z-10 px-6 md:px-12 py-12 max-w-3xl">
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
             /// TH3 STUDIO
           </h1>
           <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
@@ -63,24 +65,110 @@ export default function Studio() {
           paddingTop: 'calc(4rem + 4rem)',
         }}
       >
-        <div className="max-w-6xl mx-auto px-4">
-          {/* Photo Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {studioPhotos.map((photo, idx) => (
-              <div key={idx} className="relative h-80 md:h-96 overflow-hidden group">
-                <img
-                  src={photo.url}
-                  alt={photo.label}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
-                    {photo.label}
-                  </p>
-                </div>
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Masonry Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
+            {/* First row: 2 equal photos */}
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[0].url}
+                alt={studioPhotos[0].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[0].label}
+                </p>
               </div>
-            ))}
+            </div>
+
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[1].url}
+                alt={studioPhotos[1].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[1].label}
+                </p>
+              </div>
+            </div>
+
+            {/* Second row: Full width photo */}
+            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+              <img
+                src={studioPhotos[2].url}
+                alt={studioPhotos[2].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[2].label}
+                </p>
+              </div>
+            </div>
+
+            {/* Third row: 2 equal photos */}
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[3].url}
+                alt={studioPhotos[3].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[3].label}
+                </p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[4].url}
+                alt={studioPhotos[4].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[4].label}
+                </p>
+              </div>
+            </div>
+
+            {/* Fourth row: 2 equal photos */}
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[5].url}
+                alt={studioPhotos[5].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[5].label}
+                </p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+              <img
+                src={studioPhotos[6].url}
+                alt={studioPhotos[6].label}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+              <div className="absolute bottom-0 right-0 p-3 md:p-4">
+                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                  {studioPhotos[6].label}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Info Box */}
