@@ -66,7 +66,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
           {/* Studio Info Box */}
-          <div className="max-w-2xl mt-auto md:ml-auto mx-auto p-5 bg-black">
+          <div className="max-w-xl mt-auto md:ml-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
