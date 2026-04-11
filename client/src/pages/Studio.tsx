@@ -3,33 +3,40 @@ import { Link } from "wouter";
 export default function Studio() {
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+  
+  // Studio photos with labels
+  const studioPhotos = [
+    { label: "/// Control Room", url: "https://nationalfreedom.studio/visuals/NF_control_01.jpg" },
+    { label: "/// Main Room", url: "https://nationalfreedom.studio/visuals/NF_main_01.jpg" },
+    { label: "/// Drums + bobs & bits", url: "https://nationalfreedom.studio/visuals/NF_drums_01.jpg" },
+    { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://nationalfreedom.studio/visuals/NF_guitar_01.jpg" },
+    { label: "/// Wurli Upright /// Melody Grand", url: "https://nationalfreedom.studio/visuals/NF_pianos_01.jpg" },
+  ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_0c8d15f9.jpg"
-        >
-          <source
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
-            type="video/mp4"
-          />
-        </video>
+      {/* Hero Section with Overlay Content */}
+      <section className="relative w-full min-h-screen md:min-h-[80vh] flex items-center justify-start overflow-hidden bg-black">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+          style={{
+            backgroundImage: "url('https://nationalfreedom.studio/visuals/NF_control_01.jpg')",
+            backgroundPosition: 'center',
+          }}
+        />
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40 z-5" />
 
-        {/* Logo Overlay */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none" style={{ top: '-70px' }}>
-          <div className="pointer-events-auto text-center">
-            <h1 className="text-6xl md:text-7xl font-bold text-white" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.1em'}}>
-              STUDIO
-            </h1>
-          </div>
+        {/* Content Overlay */}
+        <div className="relative z-10 px-6 md:px-12 py-12 max-w-2xl">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em'}}>
+            /// TH3 STUDIO
+          </h1>
+          <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
+            Eclectic. Intimate. The right mix of vintage hunkydory and modern wizbang. This isn't a sterile, operating-room audio clinic. National Freedom is making music in someone's rad living room that feels like your own rad living room.
+          </p>
         </div>
       </section>
 
@@ -45,9 +52,9 @@ export default function Studio() {
         }}
       />
 
-      {/* Content Section */}
+      {/* Photo Gallery Section */}
       <section
-        className="relative w-full py-16 md:py-12 -mt-8 md:-mt-16"
+        className="relative w-full py-12 md:py-16 -mt-8 md:-mt-16"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
@@ -57,20 +64,28 @@ export default function Studio() {
         }}
       >
         <div className="max-w-6xl mx-auto px-4">
+          {/* Photo Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {studioPhotos.map((photo, idx) => (
+              <div key={idx} className="relative h-80 md:h-96 overflow-hidden group">
+                <img
+                  src={photo.url}
+                  alt={photo.label}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
+                    {photo.label}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
-            <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// TH3 STUDIO
-            </h2>
-            <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Eclectic. Intimate. The right mix of vintage hunkydory and modern wizbang. This isn't a sterile, operating-room audio clinic. National Freedom is making music in someone's rad living room that feels like your own rad living room.
-            </p>
-            <p className="mt-4">
-              <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
-                Back → → →
-              </Link>
-            </p>
-            <hr className="border-gray-600 mt-4 mb-3" />
+            <hr className="border-gray-600 mt-0 mb-3" />
 
             {/* Navigation */}
             <nav className="pt-2 pb-3">
