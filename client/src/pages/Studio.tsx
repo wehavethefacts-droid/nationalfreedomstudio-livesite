@@ -6,9 +6,8 @@ export default function Studio() {
     { label: "/// Drums + bobs & bits", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_drum-corner_01_3ff37c40.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_guitar-amps_01_aeb85bf7.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Wurli Upright /// Melody Grand", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_pianos_01_6a8da621.jpg", colSpan: 1, rowSpan: 1 },
-    { label: "/// Pianos", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_pianos_01_6a8da621.jpg", colSpan: 1, rowSpan: 1 },
-    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
     { label: "/// Rack", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_rack_01_a19ed1bb.jpg", colSpan: 1, rowSpan: 1 },
+    { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },
   ];
 
   return (
@@ -144,20 +143,6 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Fourth row: Rack */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-2">
-              <img
-                src={studioPhotos[5].url}
-                alt={studioPhotos[5].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
-              <div className="absolute bottom-0 right-0 p-3 md:p-4">
-                <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
-                  {studioPhotos[5].label}
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* CTA Section */}
