@@ -27,14 +27,14 @@ export default function Home() {
         <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
           <Link href="/studio" className="pointer-events-auto cursor-pointer hover:opacity-75 transition-opacity">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_3badc998.svg"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_90bb4d26.svg"
               alt="National Freedom Logo"
               style={{
-                width: '1400px',
+                width: '1200px',
                 height: 'auto',
-                maxWidth: '100vw',
+                maxWidth: '90vw',
                 display: 'block',
-                marginLeft: '-200px'
+                marginLeft: '0'
               }}
             />
           </Link>
