@@ -41,7 +41,7 @@ export default function Studio() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="relative w-full py-0 md:py-0 pb-24 md:pb-32 bg-black">
+      <section className="relative w-full py-0 md:py-0 bg-black">
         {/* Grainy Texture Overlay */}
         <div
           className="absolute inset-0 w-full h-full z-0"
@@ -194,7 +194,7 @@ export default function Studio() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mb-48 mt-12">
+          <div className="text-center mb-12 mt-12">
             <p className="text-xl md:text-5xl font-bold mb-6 text-white" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
