@@ -113,7 +113,7 @@ export default function Gear() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-0 py-6 md:py-8">
                   {/* Left Column - Category Name */}
                   <div className="pr-4 md:pr-8">
-                    <h3 className="text-base md:text-lg font-bold text-black" style={{fontFamily: "'Special Elite', serif"}}>
+                    <h3 className="text-base md:text-lg font-bold text-black" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
                       {category.title}
                     </h3>
                   </div>
@@ -122,7 +122,7 @@ export default function Gear() {
                   <div className="md:col-span-3 pl-0 md:pl-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
                       {category.items.map((item, itemIdx) => (
-                        <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <div key={itemIdx} className="text-sm md:text-base text-gray-700 font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
                           {item}
                         </div>
                       ))}
