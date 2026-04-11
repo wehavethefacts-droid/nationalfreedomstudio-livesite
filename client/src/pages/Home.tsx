@@ -23,15 +23,20 @@ export default function Home() {
           />
         </video>
 
-        {/* Logo Overlay */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <Link href="/studio">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_960f51cf.svg"
-              alt="National Freedom Studio"
-              className="w-screen h-screen object-contain cursor-pointer hover:opacity-75 transition-opacity"
-              style={{ opacity: 0.9, filter: 'brightness(1.1)' }}
-            />
+        {/* Logo Overlay - Repeating NATIONAL FREEDOM Text */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center overflow-hidden">
+          <Link href="/studio" className="w-full h-full flex items-center justify-center">
+            <div className="text-center cursor-pointer hover:opacity-75 transition-opacity" style={{ width: '150%', opacity: 0.85 }}>
+              <div style={{ fontSize: '120px', fontWeight: 'bold', color: 'white', lineHeight: '1.2', fontFamily: 'Courier Prime, monospace', textShadow: '2px 2px 4px rgba(0,0,0,0.8)', letterSpacing: '0.15em' }}>
+                NATIONAL FREEDOM NATIONAL FREEDOM
+              </div>
+              <div style={{ fontSize: '120px', fontWeight: 'bold', color: 'white', lineHeight: '1.2', fontFamily: 'Courier Prime, monospace', textShadow: '2px 2px 4px rgba(0,0,0,0.8)', letterSpacing: '0.15em' }}>
+                NATIONAL FREEDOM NATIONAL FREEDOM
+              </div>
+              <div style={{ fontSize: '120px', fontWeight: 'bold', color: 'white', lineHeight: '1.2', fontFamily: 'Courier Prime, monospace', textShadow: '2px 2px 4px rgba(0,0,0,0.8)', letterSpacing: '0.15em' }}>
+                NATIONAL FREEDOM NATIONAL FREEDOM
+              </div>
+            </div>
           </Link>
         </div>
       </section>
