@@ -9,13 +9,14 @@ export default function PageFooter() {
     <footer className="relative w-full">
       {/* Backslash Divider */}
       <div
-        className="relative w-full mt-2 md:mt-4 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full mt-0 md:mt-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundSize: 'auto 100%',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'repeat-x',
           backgroundAttachment: 'scroll',
+          backgroundColor: '#f9f9f9',
         }}
       />
 
