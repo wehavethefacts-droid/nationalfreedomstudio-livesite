@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 
-const buffaloUrl = "https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?w=400&h=400&fit=crop";
+const buffaloUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,15 +70,16 @@ export default function MobileMenu() {
               <img
                 src={buffaloUrl}
                 alt="Buffalo Head"
-                className="w-32 h-32 object-contain mb-6"
+                className="w-24 h-24 object-contain mb-4"
               />
               <div
-                className="text-center space-y-1"
+                className="text-center space-y-0"
                 style={{
                   fontFamily: "'Special Elite', serif",
-                  fontSize: "14px",
+                  fontSize: "10px",
                   fontWeight: "bold",
-                  letterSpacing: "2px",
+                  letterSpacing: "1px",
+                  lineHeight: "1.2",
                 }}
               >
                 <p>NATIONAL FREEDOM</p>
