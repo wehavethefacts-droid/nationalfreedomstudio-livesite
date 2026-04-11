@@ -131,6 +131,19 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Buffalo and Copyright on Mobile */}
+        <div className="md:hidden flex flex-col items-center justify-center mt-8">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
+            alt="Buffalo Head"
+            className="max-h-48 object-contain mb-4"
+          />
+          <div className="text-center text-xs font-mono text-gray-500 space-y-1">
+            <p>/// © 2020 - 2026 National Freedom Studio</p>
+            <p>/// Site by T.rox</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
