@@ -73,48 +73,53 @@ export default function Home() {
             <p className="mb-0 text-white text-sm">
               National Freedom is a landmark studio where some of the most original records of the last decade were made.
             </p>
-            <p className="mt-2">
-              <Link href="/studio" className="text-blue-600 hover:text-white text-sm">
-                More <span className="font-serif">→ → →</span>
+            <p className="mt-4">
+              <Link href="/studio" className="text-red-500 hover:text-red-400 text-sm font-mono">
+                More →→→
               </Link>
             </p>
-            <hr className="border-gray-700 mt-4" />
+            <hr className="border-gray-600 mt-6 mb-6" />
 
             {/* Footer Navigation */}
-            <nav className="pt-6">
-              <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs font-mono">
+            <nav className="pt-2 pb-6">
+              <ul className="grid grid-cols-3 gap-6 text-xs font-mono text-gray-400">
                 <li>
-                  <Link href="/studio" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    ///Studio
+                  <Link href="/studio" className="hover:text-white transition-colors">
+                    ///STUDIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    g3ar
+                  <Link href="/gear" className="hover:text-white transition-colors">
+                    ///G3AR
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    disc0g
+                  <Link href="/discography" className="hover:text-white transition-colors">
+                    ///DISC0G
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    mast3ring
+                  <Link href="/mastering" className="hover:text-white transition-colors">
+                    ///MAST3RING
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    ab0ut
+                  <Link href="/about" className="hover:text-white transition-colors">
+                    ///AB0UT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="font-bold uppercase hover:text-blue-600 text-gray-500">
-                    cont4ct
+                  <Link href="/contact" className="hover:text-white transition-colors">
+                    ///C0NT4CT
                   </Link>
                 </li>
               </ul>
             </nav>
+            <hr className="border-gray-600 mt-6 mb-6" />
+            <div className="text-xs font-mono text-gray-500 space-y-1">
+              <p>/// © 2020 - 2026 National Freedom Studio</p>
+              <p>/// Site by T.rox</p>
+            </div>
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}
