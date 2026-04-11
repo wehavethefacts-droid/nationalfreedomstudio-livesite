@@ -15,7 +15,7 @@ export default function Studio() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Overlay Content */}
-      <section className="relative w-full min-h-[50vh] md:min-h-[45vh] flex items-center justify-start bg-black">
+      <section className="relative w-full min-h-[20vh] md:min-h-[18vh] flex items-center justify-start bg-black overflow-hidden">
         {/* Black Background */}
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
         
@@ -42,7 +42,7 @@ export default function Studio() {
       </section>
 
       {/* Full-Width Control Room Image */}
-      <section className="relative w-full h-[400px] md:h-[500px] overflow-visible z-20 -mt-16 md:-mt-8">
+      <section className="relative w-full h-[550px] md:h-[700px] overflow-hidden">
         <img
           src="https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg"
           alt="Control Room"
