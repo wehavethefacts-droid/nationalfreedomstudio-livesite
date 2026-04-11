@@ -3,10 +3,25 @@ import PageFooter from "@/components/PageFooter";
 export default function About() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-auto md:min-h-[60vh] flex items-center justify-start bg-black py-6 md:py-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
+      {/* Hero Section with Overlay Content */}
+      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
+        {/* Black Background */}
+        <div className="absolute inset-0 w-full h-full bg-black z-0" />
+        
+        {/* White Grainy Dots Overlay */}
+        <div
+          className="absolute inset-0 w-full h-full z-5"
+          style={{
+            backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png')",
+            backgroundSize: 'auto',
+            backgroundRepeat: 'repeat',
+            opacity: 0.3,
+          }}
+        />
+
+        {/* Content Overlay */}
+        <div className="relative z-10 px-4 md:px-8 py-4 md:py-6 max-w-3xl ml-2 md:ml-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
             /// AB0UT
           </h1>
         </div>
