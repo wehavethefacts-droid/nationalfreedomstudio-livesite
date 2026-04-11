@@ -20,20 +20,6 @@ export default function Home() {
           />
         </video>
 
-        {/* Slash Overlay Pattern */}
-        <div 
-          className="absolute inset-0 z-5 pointer-events-none opacity-20"
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-              45deg,
-              transparent,
-              transparent 60px,
-              rgba(255, 255, 255, 0.3) 60px,
-              rgba(255, 255, 255, 0.3) 120px
-            )`,
-          }}
-        ></div>
-
         {/* Logo Overlay */}
         <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
           <Link href="/studio">
@@ -44,6 +30,21 @@ export default function Home() {
             />
           </Link>
         </div>
+
+        {/* Bottom Slash Vector Overlay */}
+        <svg
+          className="absolute bottom-0 left-0 w-full h-auto z-5 opacity-40"
+          viewBox="0 0 1920 200"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern id="slashes" x="0" y="0" width="120" height="200" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="120" y2="200" stroke="white" strokeWidth="40" />
+            </pattern>
+          </defs>
+          <rect width="1920" height="200" fill="url(#slashes)" />
+        </svg>
       </section>
 
       {/* Footer Section */}
