@@ -56,11 +56,11 @@ export default function Home() {
       <footer
         className="relative w-full py-16 md:py-24"
         style={{
-          backgroundImage: `url('${noiseUrl}'), url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/buffalo-head-pattern_eb17fab1.png')`,
+          backgroundImage: `url('${noiseUrl}'), url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png')`,
           backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto, 60%',
+          backgroundSize: 'auto, auto',
           backgroundRepeat: 'repeat, repeat-x',
-          backgroundPosition: '0 0, center 60%',
+          backgroundPosition: '0 0, center 50%',
           backgroundAttachment: 'scroll, scroll',
         }}
       >
