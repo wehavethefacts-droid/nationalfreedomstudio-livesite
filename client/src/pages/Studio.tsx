@@ -71,8 +71,8 @@ export default function Studio() {
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           {/* Masonry Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
-            {/* First row: Full width Main Room */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+            {/* First row: Drums and Guitar */}
+            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[0].url}
                 alt={studioPhotos[0].label}
@@ -86,7 +86,6 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Second row: Drums and Guitar */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[1].url}
@@ -101,6 +100,7 @@ export default function Studio() {
               </div>
             </div>
 
+            {/* Second row: Pianos */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[2].url}
@@ -115,7 +115,6 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Third row: Pianos */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-2">
               <img
                 src={studioPhotos[3].url}
@@ -130,7 +129,8 @@ export default function Studio() {
               </div>
             </div>
 
-            <div className="relative overflow-hidden group col-span-1 md:col-span-2">
+            {/* Third row: Full width Main Room */}
+            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
               <img
                 src={studioPhotos[4].url}
                 alt={studioPhotos[4].label}
@@ -144,7 +144,7 @@ export default function Studio() {
               </div>
             </div>
 
-            {/* Fourth row: Rack (3 columns on desktop) */}
+            {/* Fourth row: Rack */}
             <div className="relative overflow-hidden group col-span-2 md:col-span-2">
               <img
                 src={studioPhotos[5].url}
