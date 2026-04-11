@@ -4,7 +4,7 @@ export default function Mastering() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center justify-start bg-black py-12 md:py-20">
+      <section className="relative w-full min-h-auto md:min-h-[60vh] flex items-center justify-start bg-black py-6 md:py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-12">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
             /// MAST3RING
