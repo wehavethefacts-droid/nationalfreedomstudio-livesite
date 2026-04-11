@@ -20,16 +20,20 @@ export default function MobileMenu() {
       {/* Mobile Menu Button - Fixed bottom right */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed bottom-6 right-6 z-40 w-20 h-20 flex items-center justify-center"
+        className="md:hidden fixed bottom-6 right-6 z-40 flex items-center justify-center"
         style={{
+          width: "80px",
+          height: "80px",
           backgroundColor: "#d97a9a",
-          border: "4px solid black",
-          borderRadius: "20% 18% 22% 19% / 19% 21% 18% 22%",
+          border: "5px solid black",
+          borderRadius: "25% 20% 28% 22% / 22% 28% 20% 25%",
           fontFamily: "'Special Elite', serif",
-          fontSize: "28px",
-          fontWeight: "bold",
+          fontSize: "32px",
+          fontWeight: "900",
           cursor: "pointer",
-          boxShadow: "inset -2px -2px 4px rgba(0,0,0,0.2), inset 2px 2px 4px rgba(0,0,0,0.1)",
+          position: "relative",
+          boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
+          transition: "transform 0.2s ease",
         }}
       >
         {isOpen ? "X" : "MENU"}
@@ -72,16 +76,16 @@ export default function MobileMenu() {
               <img
                 src={buffaloUrl}
                 alt="Buffalo Head"
-                className="w-24 h-24 object-contain mb-4"
+                className="w-40 h-40 object-contain mb-6"
               />
               <div
                 className="text-center space-y-0"
                 style={{
                   fontFamily: "'Special Elite', serif",
-                  fontSize: "10px",
+                  fontSize: "16px",
                   fontWeight: "bold",
-                  letterSpacing: "1px",
-                  lineHeight: "1.2",
+                  letterSpacing: "2px",
+                  lineHeight: "1.3",
                 }}
               >
                 <p>NATIONAL FREEDOM</p>
@@ -95,16 +99,21 @@ export default function MobileMenu() {
             <div className="flex justify-end">
               <button
                 onClick={() => setIsOpen(false)}
-                className="w-20 h-20 flex items-center justify-center"
                 style={{
+                  width: "80px",
+                  height: "80px",
                   backgroundColor: "#d97a9a",
-                  border: "4px solid black",
-                  borderRadius: "20% 18% 22% 19% / 19% 21% 18% 22%",
+                  border: "5px solid black",
+                  borderRadius: "25% 20% 28% 22% / 22% 28% 20% 25%",
                   fontFamily: "'Special Elite', serif",
-                  fontSize: "28px",
-                  fontWeight: "bold",
+                  fontSize: "32px",
+                  fontWeight: "900",
                   cursor: "pointer",
-                  boxShadow: "inset -2px -2px 4px rgba(0,0,0,0.2), inset 2px 2px 4px rgba(0,0,0,0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
+                  transition: "transform 0.2s ease",
                 }}
               >
                 X
