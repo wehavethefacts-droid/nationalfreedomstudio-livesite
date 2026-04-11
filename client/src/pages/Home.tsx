@@ -46,15 +46,17 @@ export default function Home() {
         className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
+          backgroundColor: '#f9f9f9',
           backgroundSize: 'auto 100%',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'repeat-x',
+          backgroundAttachment: 'scroll',
         }}
       />
 
       {/* Footer Section */}
       <footer
-        className="relative w-full py-16 md:py-12"
+        className="relative w-full py-16 md:py-12 -mt-0"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
