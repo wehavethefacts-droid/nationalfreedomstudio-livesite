@@ -67,7 +67,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
           {/* Studio Info Box */}
           <div className="max-w-sm mt-auto md:ml-auto mx-auto p-6 bg-black">
-            <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Lectra', serif"}}>
+            <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
             <p className="mb-0 text-white text-sm">
@@ -82,7 +82,7 @@ export default function Home() {
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-6">
-              <ul className="grid grid-cols-3 gap-6 text-xs text-gray-400" style={{fontFamily: "'Lectra', serif"}}>
+              <ul className="grid grid-cols-3 gap-6 text-xs text-gray-400" style={{fontFamily: "'Special Elite', serif"}}>
                 <li>
                   <Link href="/studio" className="hover:text-pink-500 transition-colors">
                     ///STUDIO
