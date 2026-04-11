@@ -23,8 +23,8 @@ export default function MobileMenu() {
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden fixed bottom-6 right-6 z-[9999] flex items-center justify-center"
         style={{
-          width: '140px',
-          height: '140px',
+          width: '90px',
+          height: '90px',
           backgroundColor: 'transparent',
           border: 'none',
           cursor: 'pointer',
@@ -34,39 +34,47 @@ export default function MobileMenu() {
         }}
       >
         <svg
-          width="140"
-          height="140"
-          viewBox="0 0 140 140"
+          width="90"
+          height="90"
+          viewBox="0 0 90 90"
           style={{
-            filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25))',
+            filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))',
           }}
         >
           {/* Outer pink background with organic wavy edges */}
           <path
-            d="M 15 25 Q 18 12 28 15 Q 38 18 48 12 Q 58 8 70 12 Q 82 8 92 15 Q 102 18 125 20 L 128 35 Q 132 48 130 65 Q 132 82 128 100 L 125 120 Q 102 128 92 125 Q 82 132 70 128 Q 58 132 48 128 Q 38 132 28 125 Q 18 128 15 120 L 12 100 Q 8 82 10 65 Q 8 48 12 35 Z"
+            d="M 10 18 Q 12 8 20 10 Q 28 12 35 8 Q 42 5 45 8 Q 52 5 57 8 Q 65 12 75 10 Q 82 12 85 18 L 87 28 Q 89 38 87 45 Q 89 52 87 62 L 85 72 Q 82 78 75 80 Q 65 85 57 82 Q 52 85 45 82 Q 42 85 35 82 Q 28 85 20 80 Q 12 78 10 72 L 8 62 Q 6 52 8 45 Q 6 38 8 28 Z"
             fill="#d97a9a"
             stroke="none"
           />
 
-          {/* Thick black rectangular frame with rounded corners */}
-          <g stroke="black" strokeWidth="18" fill="none" strokeLinecap="round" strokeLinejoin="round">
-            {/* Top border */}
-            <path d="M 25 35 Q 35 28 50 32 Q 70 28 90 32 Q 105 28 115 35" />
-            {/* Right border */}
-            <path d="M 115 35 Q 122 50 120 70 Q 122 90 115 105" />
-            {/* Bottom border */}
-            <path d="M 115 105 Q 105 112 90 108 Q 70 112 50 108 Q 35 112 25 105" />
-            {/* Left border */}
-            <path d="M 25 105 Q 18 90 20 70 Q 18 50 25 35" />
+          {/* Thin black segmented border frame */}
+          <g stroke="black" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            {/* Top-left corner */}
+            <path d="M 15 22 L 28 22" />
+            {/* Top-right corner */}
+            <path d="M 62 22 L 75 22" />
+            {/* Right-top segment */}
+            <path d="M 78 25 Q 82 35 80 45" />
+            {/* Right-bottom segment */}
+            <path d="M 80 45 Q 82 55 78 65" />
+            {/* Bottom-right corner */}
+            <path d="M 75 68 L 62 68" />
+            {/* Bottom-left corner */}
+            <path d="M 28 68 L 15 68" />
+            {/* Left-bottom segment */}
+            <path d="M 12 65 Q 8 55 10 45" />
+            {/* Left-top segment */}
+            <path d="M 10 45 Q 8 35 12 25" />
           </g>
 
-          {/* Center text - MENU or X */}
+          {/* Center text - MENU or X - much smaller */}
           <text
-            x="70"
-            y="75"
+            x="45"
+            y="50"
             textAnchor="middle"
             dominantBaseline="middle"
-            fontSize="48"
+            fontSize="16"
             fontWeight="bold"
             fontFamily="'Special Elite', serif"
             fill="black"
