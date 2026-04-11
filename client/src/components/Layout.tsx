@@ -25,32 +25,32 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="hidden md:block">
             <ul className="flex items-center justify-end space-x-8">
               <li>
-                <Link href="/studio" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/studio" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   Studio
                 </Link>
               </li>
               <li>
-                <Link href="/gear" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/gear" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   g3ar
                 </Link>
               </li>
               <li>
-                <Link href="/discography" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/discography" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   disc0g
                 </Link>
               </li>
               <li>
-                <Link href="/mastering" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/mastering" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   mast3ring
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/about" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   ab0ut
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-serif font-bold tracking-wider uppercase text-xs hover:text-blue-600">
+                <Link href="/contact" className="font-mono font-bold tracking-wider uppercase text-xs hover:text-blue-600 transition-colors">
                   cont4ct
                 </Link>
               </li>

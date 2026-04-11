@@ -20,6 +20,20 @@ export default function Home() {
           />
         </video>
 
+        {/* Slash Overlay Pattern */}
+        <div 
+          className="absolute inset-0 z-5 pointer-events-none opacity-20"
+          style={{
+            backgroundImage: `repeating-linear-gradient(
+              45deg,
+              transparent,
+              transparent 60px,
+              rgba(255, 255, 255, 0.3) 60px,
+              rgba(255, 255, 255, 0.3) 120px
+            )`,
+          }}
+        ></div>
+
         {/* Logo Overlay */}
         <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
           <Link href="/studio">
@@ -55,34 +69,34 @@ export default function Home() {
 
             {/* Footer Navigation */}
             <nav className="pt-6">
-              <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+              <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs font-mono">
                 <li>
-                  <Link href="/studio" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/studio" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     ///Studio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/gear" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     g3ar
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/discography" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     disc0g
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/mastering" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     mast3ring
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/about" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     ab0ut
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="font-serif font-bold uppercase hover:text-blue-600 text-gray-500">
+                  <Link href="/contact" className="font-bold uppercase hover:text-blue-600 text-gray-500">
                     cont4ct
                   </Link>
                 </li>
