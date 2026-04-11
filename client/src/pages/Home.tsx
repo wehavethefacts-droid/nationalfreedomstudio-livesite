@@ -75,41 +75,41 @@ export default function Home() {
             </p>
             <p className="mt-4">
               <Link href="/studio" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
-                More →→→
+                More → → →
               </Link>
             </p>
             <hr className="border-gray-600 mt-4 mb-3" />
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-3 gap-6 text-sm font-bold text-gray-400" style={{fontFamily: "'Special Elite', serif"}}>
+              <ul className="grid grid-cols-3 gap-6 text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
                 <li>
-                  <Link href="/studio" className="hover:text-pink-500 transition-colors">
+                  <Link href="/studio" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///STUDIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="hover:text-pink-500 transition-colors">
+                  <Link href="/gear" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///G3AR
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="hover:text-pink-500 transition-colors">
+                  <Link href="/discography" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///DISC0G
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="hover:text-pink-500 transition-colors">
+                  <Link href="/mastering" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///MAST3RING
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-pink-500 transition-colors">
+                  <Link href="/about" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///AB0UT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-pink-500 transition-colors">
+                  <Link href="/contact" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
                     ///C0NT4CT
                   </Link>
                 </li>
