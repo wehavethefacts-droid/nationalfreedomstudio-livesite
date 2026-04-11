@@ -43,7 +43,7 @@ export default function Home() {
 
       {/* Backslash Divider - positioned to span hero and footer */}
       <div
-        className="relative w-full -mt-12 md:-mt-20 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full -mt-32 md:-mt-48 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundColor: '#f9f9f9',
