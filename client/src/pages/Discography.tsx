@@ -1,120 +1,227 @@
-import { Link } from "wouter";
+import PageFooter from "@/components/PageFooter";
 
 export default function Discography() {
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+  const discography = [
+    {
+      artist: "Richard Swift",
+      albums: [
+        { title: "The Hex", year: "2018", url: "#" },
+        { title: "The Atlantic Ocean", year: "2009", url: "#" },
+        { title: "Walt Wolfman", year: "2011", url: "#" },
+        { title: "Other People's Songs", year: "2010", note: "with Damien Jurado", url: "#" },
+        { title: "As Onasis", year: "2008", url: "#" },
+        { title: "Ground Trouble Jaw", year: "2008", url: "#" }
+      ]
+    },
+    {
+      artist: "Nathaniel Rateliff & the Night Sweats",
+      albums: [
+        { title: "Nathaniel Rateliff & the Night Sweats", year: "2015", url: "#" },
+        { title: "Tearing at the Seams", year: "2018", url: "#" },
+        { title: "And It's Still Alright", year: "2020", note: "as Nathaniel Rateliff", url: "#" }
+      ]
+    },
+    {
+      artist: "Foxygen",
+      albums: [
+        { title: "Take The Kids Off Broadway", year: "2011", url: "#" },
+        { title: "We Are The 21st Century Ambassadors Of Peace & Magic", year: "2013", url: "#" }
+      ]
+    },
+    {
+      artist: "Lucius",
+      albums: [
+        { title: "Christmas Time Is Here", year: "2018", url: "#" }
+      ]
+    },
+    {
+      artist: "Pure Bathing Culture",
+      albums: [
+        { title: "The Chalice", year: "2021", url: "#" },
+        { title: "Moon Tides", year: "2013", url: "#" }
+      ]
+    },
+    {
+      artist: "Damien Jurado",
+      albums: [
+        { title: "Saint Bartlett", year: "2010", url: "#" },
+        { title: "Maraqopa", year: "2012", url: "#" },
+        { title: "Brothers and Sisters of the Eternal Son", year: "2014", url: "#" },
+        { title: "Visions of Us on the Land", year: "2015", url: "#" }
+      ]
+    },
+    {
+      artist: "Sharon Van Etten",
+      albums: [
+        { title: "Are We There", year: "2014", note: "Mixed at NF", url: "#" }
+      ]
+    },
+    {
+      artist: "Guster",
+      albums: [
+        { title: "Evermotion", year: "2015", url: "#" }
+      ]
+    },
+    {
+      artist: "Kevin Morby",
+      albums: [
+        { title: "City Music", year: "2017", url: "#" }
+      ]
+    },
+    {
+      artist: "Cold War Kids",
+      albums: [
+        { title: "Something Is Not Right With Me", year: "2008", url: "#" }
+      ]
+    },
+    {
+      artist: "Tennis",
+      albums: [
+        { title: "Ritual in Repeat", year: "2014", url: "#" },
+        { title: "Small Sound", year: "2013", url: "#" }
+      ]
+    },
+    {
+      artist: "The Mynabirds",
+      albums: [
+        { title: "What We Lose in the Fire We Gain in the Flood", year: "2010", url: "#" },
+        { title: "Generals", year: "2012", url: "#" }
+      ]
+    },
+    {
+      artist: "Gardens & Villa",
+      albums: [
+        { title: "Gardens & Villa", year: "2011", url: "#" },
+        { title: "Gordon Von Zilla Presents", year: "2020", url: "#" }
+      ]
+    },
+    {
+      artist: "Jessie Baylin",
+      albums: [
+        { title: "Little Spark", year: "2012", url: "#" },
+        { title: "Strawberry Wind", year: "2018", url: "#" }
+      ]
+    },
+    {
+      artist: "Laetitia Sadier",
+      albums: [
+        { title: "The Trip", year: "2010", url: "#" }
+      ]
+    },
+    {
+      artist: "Tijuana Panthers",
+      albums: [
+        { title: "Wayne Interest", year: "2014", url: "#" }
+      ]
+    },
+    {
+      artist: "Marco Benevento",
+      albums: [
+        { title: "Swift", year: "2014", url: "#" }
+      ]
+    },
+    {
+      artist: "Born Ruffians",
+      albums: [
+        { title: "Uncle, Duke & the Chief", year: "2018", url: "#" }
+      ]
+    },
+    {
+      artist: "Lonnie Holley",
+      albums: [
+        { title: "National Freedom", year: "2020", url: "#" }
+      ]
+    },
+    {
+      artist: "David Bazan",
+      albums: [
+        { title: "Care", year: "2017", url: "#" }
+      ]
+    },
+    {
+      artist: "Wake Owl",
+      albums: [
+        { title: "The Private World of Paradise", year: "2017", url: "#" }
+      ]
+    },
+    {
+      artist: "Tahiti 80",
+      albums: [
+        { title: "Ball Room", year: "2014", url: "#" }
+      ]
+    },
+    {
+      artist: "The Grahams",
+      albums: [
+        { title: "Kids Like Us", year: "2020", url: "#" }
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_0c8d15f9.jpg"
-        >
-          <source
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        {/* Logo Overlay */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none" style={{ top: '-70px' }}>
-          <div className="pointer-events-auto text-center">
-            <h1 className="text-6xl md:text-7xl font-bold text-white" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.1em'}}>
-              DISC0G
-            </h1>
-          </div>
+      <section className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center justify-start bg-black py-12 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 md:px-12">
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
+            /// DISC0G
+          </h1>
+          <p className="text-white text-base md:text-lg font-bold max-w-2xl" style={{fontFamily: "'Inconsolata', monospace"}}>
+            These projects were recorded (or mostly recorded or maybe mixed) at National Freedom.
+          </p>
         </div>
       </section>
-
-      {/* Backslash Divider */}
-      <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
-        style={{
-          backgroundImage: `url('${backslashUrl}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'bottom',
-          backgroundRepeat: 'repeat-x',
-          backgroundAttachment: 'scroll',
-        }}
-      />
 
       {/* Content Section */}
-      <section
-        className="relative w-full py-16 md:py-12 -mt-8 md:-mt-16"
-        style={{
-          backgroundImage: `url('${noiseUrl}')`,
-          backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto',
-          backgroundRepeat: 'repeat',
-          paddingTop: 'calc(4rem + 4rem)',
-        }}
-      >
-        <div className="max-w-6xl mx-auto px-4">
-          {/* Info Box */}
-          <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
-            <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// DISC0G
-            </h2>
-            <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              National Freedom has produced and engineered some of the most influential records in contemporary music. Our discography spans multiple genres and decades of sonic innovation.
-            </p>
-            <p className="mt-4">
-              <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
-                Back → → →
-              </Link>
-            </p>
-            <hr className="border-gray-600 mt-4 mb-3" />
+      <section className="relative w-full py-12 md:py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-12">
+          <div className="space-y-12">
+            {discography.map((artist, idx) => (
+              <div key={idx} className="border-b border-gray-300 pb-8 last:border-b-0">
+                <h3 className="text-xl md:text-2xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+                  {artist.artist}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {artist.albums.map((album, albumIdx) => (
+                    <div key={albumIdx} className="flex items-start">
+                      <span className="text-gray-400 mr-4" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
+                      <div className="flex-1">
+                        <p className="font-bold text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+                          {album.title}
+                        </p>
+                        <p className="text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
+                          <span style={{color: '#00FF00'}}>///</span>{album.year}
+                          {album.note && <span className="ml-2 italic">{album.note}</span>}
+                          <a href={album.url} className="ml-3 text-green-500 hover:text-green-600 font-bold">
+                            Listen
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
 
-            {/* Navigation */}
-            <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-3 gap-6 text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
-                <li>
-                  <Link href="/studio" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///STUDIO
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///G3AR
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/discography" className="transition-colors" style={{color: '#d97a9a'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'}>
-                    ///DISC0G
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/mastering" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///MAST3RING
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///AB0UT
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///C0NT4CT
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <hr className="border-gray-600 mt-4 mb-4" />
-            <div className="text-xs font-mono text-gray-500 space-y-1">
-              <p>/// © 2020 - 2026 National Freedom Studio</p>
-              <p>/// Site by T.rox</p>
-            </div>
+          {/* CTA Section */}
+          <div className="mt-16 text-center">
+            <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+              Wanna book? Got questions?
+            </p>
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 font-bold hover:bg-green-400 hover:text-black transition-colors"
+              style={{fontFamily: "'Special Elite', serif"}}
+            >
+              CONTACT
+            </a>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <PageFooter />
     </div>
   );
 }

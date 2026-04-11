@@ -1,120 +1,52 @@
-import { Link } from "wouter";
+import PageFooter from "@/components/PageFooter";
 
 export default function Mastering() {
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_0c8d15f9.jpg"
-        >
-          <source
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        {/* Logo Overlay */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none" style={{ top: '-70px' }}>
-          <div className="pointer-events-auto text-center">
-            <h1 className="text-6xl md:text-7xl font-bold text-white" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.1em'}}>
-              MAST3RING
-            </h1>
-          </div>
+      <section className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center justify-start bg-black py-12 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 md:px-12">
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6" style={{fontFamily: "'Special Elite', serif"}}>
+            /// MAST3RING
+          </h1>
+          <p className="text-white text-base md:text-lg font-bold max-w-3xl" style={{fontFamily: "'Inconsolata', monospace"}}>
+            Mastering engineer Christopher Colbert (who's also the house engineer) brings his 30 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it. He's also quite the egalitarian.
+          </p>
         </div>
       </section>
-
-      {/* Backslash Divider */}
-      <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
-        style={{
-          backgroundImage: `url('${backslashUrl}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'bottom',
-          backgroundRepeat: 'repeat-x',
-          backgroundAttachment: 'scroll',
-        }}
-      />
 
       {/* Content Section */}
-      <section
-        className="relative w-full py-16 md:py-12 -mt-8 md:-mt-16"
-        style={{
-          backgroundImage: `url('${noiseUrl}')`,
-          backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto',
-          backgroundRepeat: 'repeat',
-          paddingTop: 'calc(4rem + 4rem)',
-        }}
-      >
-        <div className="max-w-6xl mx-auto px-4">
-          {/* Info Box */}
-          <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
-            <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// MAST3RING
+      <section className="relative w-full py-12 md:py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 md:px-12">
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{fontFamily: "'Special Elite', serif"}}>
+              Pricing
             </h2>
-            <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Mastering engineer Christopher Colbert (who's also the house engineer) brings his 30 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it. He's also quite the egalitarian. Mastering is $100/per song (no matter who you are). Power to the people.
-            </p>
-            <p className="mt-4">
-              <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
-                Back → → →
-              </Link>
-            </p>
-            <hr className="border-gray-600 mt-4 mb-3" />
-
-            {/* Navigation */}
-            <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-3 gap-6 text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
-                <li>
-                  <Link href="/studio" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///STUDIO
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///G3AR
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/discography" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///DISC0G
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/mastering" className="transition-colors" style={{color: '#d97a9a'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'}>
-                    ///MAST3RING
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///AB0UT
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///C0NT4CT
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <hr className="border-gray-600 mt-4 mb-4" />
-            <div className="text-xs font-mono text-gray-500 space-y-1">
-              <p>/// © 2020 - 2026 National Freedom Studio</p>
-              <p>/// Site by T.rox</p>
+            <div className="text-lg md:text-xl font-bold space-y-4" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <p>Mastering is <span className="text-2xl">$100/per song</span></p>
+              <p className="text-base md:text-lg text-gray-700">(no matter who you are)</p>
+              <p className="text-xl mt-6 text-green-600">Power to the people.</p>
             </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-16 text-center">
+            <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+              Wanna book? Got questions?
+            </p>
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 font-bold hover:bg-green-400 hover:text-black transition-colors"
+              style={{fontFamily: "'Special Elite', serif"}}
+            >
+              CONTACT
+            </a>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <PageFooter />
     </div>
   );
 }

@@ -1,9 +1,6 @@
-import { Link } from "wouter";
+import PageFooter from "@/components/PageFooter";
 
 export default function Studio() {
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
-  
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
     { label: "/// Rack", url: "https://nationalfreedom.studio/visuals/NF_rack_01.jpg", colSpan: 1, rowSpan: 1 },
@@ -42,29 +39,8 @@ export default function Studio() {
         </div>
       </section>
 
-      {/* Backslash Divider */}
-      <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
-        style={{
-          backgroundImage: `url('${backslashUrl}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'bottom',
-          backgroundRepeat: 'repeat-x',
-          backgroundAttachment: 'scroll',
-        }}
-      />
-
       {/* Photo Gallery Section */}
-      <section
-        className="relative w-full py-12 md:py-16 -mt-8 md:-mt-16"
-        style={{
-          backgroundImage: `url('${noiseUrl}')`,
-          backgroundColor: '#f9f9f9',
-          backgroundSize: 'auto',
-          backgroundRepeat: 'repeat',
-          paddingTop: 'calc(4rem + 4rem)',
-        }}
-      >
+      <section className="relative w-full py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           {/* Masonry Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
@@ -171,53 +147,24 @@ export default function Studio() {
             </div>
           </div>
 
-          {/* Info Box */}
-          <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
-            <hr className="border-gray-600 mt-0 mb-3" />
-
-            {/* Navigation */}
-            <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-3 gap-6 text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
-                <li>
-                  <Link href="/studio" className="transition-colors" style={{color: '#d97a9a'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'}>
-                    ///STUDIO
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///G3AR
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/discography" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///DISC0G
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/mastering" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///MAST3RING
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///AB0UT
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
-                    ///C0NT4CT
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <hr className="border-gray-600 mt-4 mb-4" />
-            <div className="text-xs font-mono text-gray-500 space-y-1">
-              <p>/// © 2020 - 2026 National Freedom Studio</p>
-              <p>/// Site by T.rox</p>
-            </div>
+          {/* CTA Section */}
+          <div className="text-center mb-12">
+            <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+              Wanna book? Got questions?
+            </p>
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 font-bold hover:bg-green-400 hover:text-black transition-colors"
+              style={{fontFamily: "'Special Elite', serif"}}
+            >
+              CONTACT
+            </a>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <PageFooter />
     </div>
   );
 }
