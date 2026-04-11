@@ -15,7 +15,7 @@ export default function Studio() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Overlay Content */}
-      <section className="relative w-full min-h-[20vh] md:min-h-[18vh] flex items-center justify-start bg-black overflow-hidden">
+      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
         {/* Black Background */}
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
         
@@ -31,7 +31,7 @@ export default function Studio() {
         />
 
         {/* Content Overlay */}
-        <div className="relative z-10 px-6 md:px-20 py-6 md:py-8 max-w-3xl ml-8 md:ml-16 pb-20 md:pb-32">
+        <div className="relative z-10 px-4 md:px-8 py-4 md:py-6 max-w-3xl ml-2 md:ml-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
             /// TH3 STUDIO
           </h1>
