@@ -60,7 +60,7 @@ export default function Discography() {
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// Discography
+              /// DISC0G
             </h2>
             <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
               National Freedom has produced and engineered some of the most influential records in contemporary music. Our discography spans multiple genres and decades of sonic innovation.

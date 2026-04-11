@@ -60,10 +60,10 @@ export default function Contact() {
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// Contact
+              /// C0NT4CT
             </h2>
             <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Get in touch with National Freedom Studio to discuss your project. Whether you're looking to record, mix, master, or collaborate, we're ready to help bring your vision to life.
+              Please tell us a LITTLE bit about your project, the dates you're looking for, and your budget. We'll get back to you ASAP: nationalfreedomstudio@gmail.com. You can also do the social media thing on Instagram and Twitter.
             </p>
             <p className="mt-4">
               <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>

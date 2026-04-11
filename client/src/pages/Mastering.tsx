@@ -60,10 +60,10 @@ export default function Mastering() {
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// Mastering
+              /// MAST3RING
             </h2>
             <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Our mastering suite brings your mixes to their full potential. With precision monitoring and expert ears, we ensure your music translates perfectly across all playback systems.
+              Mastering engineer Christopher Colbert (who's also the house engineer) brings his 30 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it. He's also quite the egalitarian. Mastering is $100/per song (no matter who you are). Power to the people.
             </p>
             <p className="mt-4">
               <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>

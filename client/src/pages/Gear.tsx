@@ -60,10 +60,10 @@ export default function Gear() {
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// The Gear
+              /// G3AR
             </h2>
             <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Our studio is equipped with the finest analog and digital equipment. From vintage consoles to modern workstations, we have everything needed to capture and craft exceptional sound.
+              We have everything a first-class, modern studio requires——plus a grip of vintage electronics and instruments to make some original noise.
             </p>
             <p className="mt-4">
               <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>

@@ -60,10 +60,10 @@ export default function About() {
           {/* Info Box */}
           <div className="max-w-xl mt-auto mx-auto p-5 bg-black">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-              /// About Us
+              /// AB0UT
             </h2>
             <p className="mb-0 text-white text-base font-bold" style={{fontFamily: "'Inconsolata', monospace"}}>
-              Founded on principles of artistic freedom and sonic excellence, National Freedom Studio has become a creative sanctuary for musicians and producers seeking to push boundaries and create timeless work.
+              House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs. He keeps all the tech, machines, instruments, and do-dads up to snuff and is always available to fix/cajole/prob-solve when needed. Like all classic engineers, he's a little grumpy, sharply funny, suffers no fools, and makes a finished jam sound amazing.
             </p>
             <p className="mt-4">
               <Link href="/" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
