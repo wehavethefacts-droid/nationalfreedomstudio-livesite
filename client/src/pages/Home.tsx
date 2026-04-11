@@ -1,10 +1,13 @@
 import { Link } from "wouter";
 
 export default function Home() {
+  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-white_083b663c.svg";
+  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-visible bg-black">
         {/* Video Background */}
         <video
           autoPlay
@@ -32,20 +35,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Backslash Divider - spans hero and footer */}
+      {/* Backslash Divider - positioned to span hero and footer */}
       <div
-        className="relative w-full h-16 md:h-32 -translate-y-1/2 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
-          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash_eda6b43c.svg)',
+          backgroundImage: `url('${backslashUrl}')`,
+          backgroundSize: 'auto 100%',
+          backgroundPosition: 'bottom',
+          backgroundRepeat: 'repeat-x',
         }}
-      ></div>
+      />
 
       {/* Footer Section */}
       <footer
-        className="relative w-full mt-0 py-16 md:py-12 bg-gray-50"
+        className="relative w-full py-16 md:py-12"
         style={{
-          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_d825c0ab.png)',
+          backgroundImage: `url('${noiseUrl}')`,
+          backgroundColor: '#f9f9f9',
           backgroundSize: 'auto',
+          backgroundRepeat: 'repeat',
         }}
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
