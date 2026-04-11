@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative w-full min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-black">
         {/* Video Background */}
         <video
           autoPlay

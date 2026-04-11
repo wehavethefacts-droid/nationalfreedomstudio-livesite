@@ -21,12 +21,12 @@ export default function MobileMenu() {
       {/* Hamburger Menu Button in Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-1 right-1 z-50 flex flex-col gap-1.5"
+        className="md:hidden fixed top-4 right-4 z-50 flex flex-col gap-1.5"
         style={{
           background: "none",
           border: "none",
           cursor: "pointer",
-          padding: "4px",
+          padding: "0",
         }}
       >
         <div
