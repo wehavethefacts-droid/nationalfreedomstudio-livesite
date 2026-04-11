@@ -74,7 +74,7 @@ export default function Home() {
               National Freedom is a landmark studio where some of the most original records of the last decade were made.
             </p>
             <p className="mt-4">
-              <Link href="/studio" className="text-pink-500 hover:text-pink-400 text-sm font-mono">
+              <Link href="/studio" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
                 More →→→
               </Link>
             </p>
