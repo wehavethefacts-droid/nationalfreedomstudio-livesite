@@ -149,7 +149,7 @@ export default function Home() {
             alt="National Freedom"
             className="max-w-xs object-contain" style={{marginBottom: '60px'}}
           />
-          <div className="text-center text-xs font-mono text-gray-500 space-y-1" style={{marginTop: '100px'}}>
+          <div className="text-center text-xs font-mono text-gray-500 space-y-1" style={{paddingTop: '100px'}}>
             <p>/// © 2020 - 2026 National Freedom Studio</p>
             <p>/// Site by T.rox</p>
           </div>
