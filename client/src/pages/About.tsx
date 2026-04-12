@@ -68,7 +68,7 @@ export default function About() {
                 <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// HOUSE ENGINEER</h3>
                 <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// Christopher Colbert</h3>
                 <p>
-                  House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
+                  House engineer Christopher Colbert is a forty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
                 </p>
                 <p>
                   He keeps all the tech, machines, instruments, and do-dads up to snuff and is always available to fix/cajole/prob-solve when needed. He can also be added to the studio fee if you'd like him there as your engineer.
