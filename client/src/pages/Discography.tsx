@@ -213,12 +213,9 @@ export default function Discography() {
                         <p className="font-bold text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
                           —— {album.title}
                         </p>
-                        <p className="text-xs md:text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
-                          <span style={{color: '#00FF00'}}>///</span>{album.year}
+                        <p className="text-xs md:text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5rem', textIndent: '-1.5rem'}}>
+                          <span style={{color: '#000000'}}>///</span>{album.year}
                           {album.note && <span className="ml-2 italic">{album.note}</span>}
-                          <a href={album.url} className="ml-3 text-green-500 hover:text-green-600 font-bold">
-                            Listen
-                          </a>
                         </p>
                       </div>
                     ))}
