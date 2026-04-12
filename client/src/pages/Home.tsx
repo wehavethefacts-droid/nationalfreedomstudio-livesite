@@ -115,7 +115,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <hr className="border-gray-600 mt-4 mb-4" />
+            <hr className="hidden md:block border-gray-600 mt-4 mb-4" />
             <div className="text-xs font-mono text-gray-500 space-y-1">
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>

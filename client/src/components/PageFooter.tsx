@@ -83,7 +83,7 @@ export default function PageFooter() {
                 </li>
               </ul>
             </nav>
-            <hr className="border-gray-600 mt-4 mb-4" />
+            <hr className="hidden md:block border-gray-600 mt-4 mb-4" />
             
             {/* Desktop Copyright - nested inside nav box */}
             <div className="hidden md:block text-xs font-mono text-gray-500 space-y-1">
