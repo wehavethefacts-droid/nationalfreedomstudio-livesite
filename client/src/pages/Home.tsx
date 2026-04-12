@@ -142,14 +142,9 @@ export default function Home() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
             alt="Buffalo Head"
-            className="max-h-48 object-contain" style={{marginBottom: '150px'}}
+            className="max-h-48 object-contain" style={{marginBottom: '250px'}}
           />
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo(3)_02c7880e.svg"
-            alt="National Freedom"
-            className="max-w-xs object-contain" style={{marginBottom: '150px'}}
-          />
-          <div className="text-center text-xs font-mono text-gray-500 space-y-1" style={{paddingTop: '100px'}}>
+          <div className="text-center text-xs font-mono text-gray-500 space-y-1">
             <p>/// © 2020 - 2026 National Freedom Studio</p>
             <p>/// Site by T.rox</p>
           </div>
