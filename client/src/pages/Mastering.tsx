@@ -80,7 +80,7 @@ export default function Mastering() {
             </div>
 
             {/* Right Column - Clients */}
-            <div className="bg-gray-300 bg-opacity-50 p-6 md:p-8">
+            <div className="p-6 md:p-8" style={{backgroundColor: 'rgba(150, 150, 150, 0.25)'}}>
               <h3 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
                 /// A SELECTION OF CLIENTS
               </h3>
