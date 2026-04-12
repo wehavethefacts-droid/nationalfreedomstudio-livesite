@@ -142,7 +142,7 @@ export default function Home() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
             alt="Buffalo Head"
-            className="max-h-48 object-contain" style={{marginBottom: '80px'}}
+            className="max-h-48 object-contain" style={{marginBottom: '150px'}}
           />
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo(3)_02c7880e.svg"
