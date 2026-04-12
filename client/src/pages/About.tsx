@@ -29,7 +29,7 @@ export default function About() {
 
       {/* Content Section with Distressed Background */}
       <section
-        className="relative w-full py-8 md:py-12"
+        className="relative w-full py-2 md:py-4"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
