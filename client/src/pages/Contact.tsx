@@ -67,19 +67,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center pb-4 md:pb-6">
-            <p className="text-lg md:text-3xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif"}}>
-              Wanna book? Got questions?
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-6 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-sm md:text-base"
-              style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.1em'}}
-            >
-              CONTACT
-            </a>
-          </div>
         </div>
       </section>
 
