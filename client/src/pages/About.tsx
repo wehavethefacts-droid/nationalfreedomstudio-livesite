@@ -59,10 +59,16 @@ export default function About() {
               </div>
 
               {/* Right Column - Darker Background */}
-              <div className="bg-gray-400 bg-opacity-30 p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
-                <p className="font-bold">HISTORY</p>
+              <div className="bg-gray-300 bg-opacity-20 p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+                <p className="font-bold">/// Christopher Colbert</p>
                 <p>
-                  The first National Freedom was tucked inside the utility room of a Fullerton, California 1940s bungalow. When that iMac and a bit of gear moved to Cottage Grove in 2005 with Richard Swift and his family, Christopher Colbert moved from Nashville and he and Swift got to work. Built inside an existing studio space, National Freedom has gone through many incarnations and arrangements——for a time it used only the big room. Over a decade and a half in the making, the studio is now an incredible sonic-lab + art-show + super-vibey space that is beloved by all who've recorded there.
+                  House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
+                </p>
+                <p>
+                  He keeps all the tech, machines, instruments, and do-dads up to snuff and is always available to fix/cajole/prob-solve when needed. He can also be added to the studio fee if you'd like him there as your engineer.
+                </p>
+                <p>
+                  Like all classic engineers, he's a little grumpy, sharply funny, suffers no fools, and makes a finished jam sound amazing.
                 </p>
               </div>
             </div>
@@ -78,15 +84,9 @@ export default function About() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
-                <p className="font-bold">/// Christopher Colbert</p>
+                <p className="font-bold">HISTORY</p>
                 <p>
-                  House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
-                </p>
-                <p>
-                  He keeps all the tech, machines, instruments, and do-dads up to snuff and is always available to fix/cajole/prob-solve when needed. He can also be added to the studio fee if you'd like him there as your engineer.
-                </p>
-                <p>
-                  Like all classic engineers, he's a little grumpy, sharply funny, suffers no fools, and makes a finished jam sound amazing.
+                  The first National Freedom was tucked inside the utility room of a Fullerton, California 1940s bungalow. When that iMac and a bit of gear moved to Cottage Grove in 2005 with Richard Swift and his family, Christopher Colbert moved from Nashville and he and Swift got to work. Built inside an existing studio space, National Freedom has gone through many incarnations and arrangements——for a time it used only the big room. Over a decade and a half in the making, the studio is now an incredible sonic-lab + art-show + super-vibey space that is beloved by all who've recorded there.
                 </p>
               </div>
               
