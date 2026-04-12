@@ -56,10 +56,16 @@ export default function About() {
                 
                 <p className="font-bold">LODGING</p>
                 <p>Yep, we're off the beaten path. We're happy to work with you on lodging options while you're here.</p>
+                
+                <p className="font-bold">HISTORY</p>
+                <p>
+                  The first National Freedom was tucked inside the utility room of a Fullerton, California 1940s bungalow. When that iMac and a bit of gear moved to Cottage Grove in 2005 with Richard Swift and his family, Christopher Colbert moved from Nashville and he and Swift got to work. Built inside an existing studio space, National Freedom has gone through many incarnations and arrangements——for a time it used only the big room. Over a decade and a half in the making, the studio is now an incredible sonic-lab + art-show + super-vibey space that is beloved by all who've recorded there.
+                </p>
               </div>
 
               {/* Right Column - Darker Background */}
               <div className="bg-gray-300 bg-opacity-20 p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+                <p className="font-bold mb-4">/// HOUSE ENGINEER</p>
                 <p className="font-bold">/// Christopher Colbert</p>
                 <p>
                   House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
@@ -76,24 +82,11 @@ export default function About() {
 
           <hr className="border-gray-300 my-12" />
 
-          {/* House Engineer & Richard Swift Section */}
+          {/* Damien Jurado & R. Swift Section */}
           <div className="mb-12">
-            <h2 className="text-lg md:text-xl font-bold mb-8" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
-              /// HOUSE ENGINEER
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
-                <p className="font-bold">HISTORY</p>
-                <p>
-                  The first National Freedom was tucked inside the utility room of a Fullerton, California 1940s bungalow. When that iMac and a bit of gear moved to Cottage Grove in 2005 with Richard Swift and his family, Christopher Colbert moved from Nashville and he and Swift got to work. Built inside an existing studio space, National Freedom has gone through many incarnations and arrangements——for a time it used only the big room. Over a decade and a half in the making, the studio is now an incredible sonic-lab + art-show + super-vibey space that is beloved by all who've recorded there.
-                </p>
-              </div>
-              
-              <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
-                <p className="font-bold">/// Damien Jurado & R. Swift</p>
-                <p className="text-xs text-gray-600">/// Photo: Sarah Jurado</p>
-              </div>
+            <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <p className="font-bold">/// Damien Jurado & R. Swift</p>
+              <p className="text-xs text-gray-600">/// Photo: Sarah Jurado</p>
             </div>
           </div>
 
