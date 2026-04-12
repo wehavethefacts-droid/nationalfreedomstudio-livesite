@@ -29,7 +29,7 @@ export default function Contact() {
 
       {/* Content Section with Distressed Background */}
       <section
-        className="relative w-full py-16 md:py-20"
+        className="relative w-full py-8 md:py-12"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
@@ -41,7 +41,7 @@ export default function Contact() {
           <div className="space-y-8 mb-12">
             <div>
               <p className="text-base md:text-lg text-gray-900 mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
-                Please tells us a LITTLE bit about your project, the dates you're looking for, and your budget. We'll get back to you ASAP:
+                Please tell us a LITTLE bit about your project, the dates you're looking for, and your budget. We'll get back to you ASAP:
               </p>
               
               <a href="mailto:nationalfreedomstudio@gmail.com" className="text-lg md:text-xl font-bold text-pink-400 hover:text-pink-500 mb-8 inline-block" style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.05em'}}>
