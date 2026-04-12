@@ -1,11 +1,17 @@
 import { Link } from "wouter";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, [children]);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -90,7 +96,7 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1">
+      <main className="flex-1 transition-opacity duration-300" style={{ opacity: isVisible ? 1 : 0 }}>
         {children}
       </main>
     </div>
