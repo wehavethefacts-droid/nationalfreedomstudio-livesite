@@ -61,7 +61,7 @@ export default function Layout({ children }: LayoutProps) {
               </li>
               <li>
                 <Link href="/contact" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
-                  cont4ct
+                  contact
                 </Link>
               </li>
             </ul>
