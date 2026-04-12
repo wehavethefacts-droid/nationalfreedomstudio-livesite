@@ -100,7 +100,7 @@ export default function Gear() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full py-6 md:py-8" style={{
+      <section className="relative w-full py-2 md:py-4" style={{
         backgroundImage: `url('${noiseUrl}')`,
         backgroundColor: '#f9f9f9',
         backgroundSize: 'auto',
@@ -122,7 +122,7 @@ export default function Gear() {
                   <div className="md:col-span-3 pl-0 md:pl-8 pt-2 md:pt-0">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                       {category.items.map((item, itemIdx) => (
-                        <div key={itemIdx} className="text-sm md:text-base text-gray-700 font-bold" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5em', textIndent: '-1.5em'}}>
+                        <div key={itemIdx} className="text-sm md:text-base text-gray-700" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5em', textIndent: '-1.5em'}}>
                           {item}
                         </div>
                       ))}
