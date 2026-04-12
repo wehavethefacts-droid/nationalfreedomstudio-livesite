@@ -48,7 +48,7 @@ export default function Contact() {
                 {'>>'} nationalfreedomstudio@gmail.com
               </a>
               
-              <p className="text-base md:text-lg text-gray-900 mb-6 mt-8" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <p className="text-base md:text-lg text-gray-900 mb-6 mt-4" style={{fontFamily: "'Inconsolata', monospace"}}>
                 You can also do the social media thing:
               </p>
               
