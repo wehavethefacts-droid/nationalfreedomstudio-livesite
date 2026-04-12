@@ -44,7 +44,7 @@ export default function About() {
               /// ABOUT THE STUDIO
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left Column */}
               <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
                 <p>
@@ -64,7 +64,7 @@ export default function About() {
               </div>
 
               {/* Right Column - Darker Background */}
-              <div className="p-4 md:p-8 space-y-4 text-sm md:text-base text-gray-900 mb-0" style={{fontFamily: "'Inconsolata', monospace", backgroundColor: 'rgba(150, 150, 150, 0.25)'}}> 
+              <div className="p-4 md:p-8 space-y-4 text-sm md:text-base text-gray-900 mb-0 mt-6 md:mt-0" style={{fontFamily: "'Inconsolata', monospace", backgroundColor: 'rgba(150, 150, 150, 0.25)'}}> 
                 <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// HOUSE ENGINEER</h3>
                 <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// Christopher Colbert</h3>
                 <p>
