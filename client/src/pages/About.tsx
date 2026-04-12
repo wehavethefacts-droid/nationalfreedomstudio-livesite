@@ -64,9 +64,9 @@ export default function About() {
               </div>
 
               {/* Right Column - Darker Background */}
-              <div className="p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace", backgroundColor: 'rgba(200, 200, 200, 0.15)'}}>
+              <div className="p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace", backgroundColor: 'rgba(150, 150, 150, 0.25)'}}>
                 <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// HOUSE ENGINEER</h3>
-                <p className="font-bold">/// Christopher Colbert</p>
+                <h3 className="text-lg md:text-xl font-bold mb-4" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', color: '#000'}}>/// Christopher Colbert</h3>
                 <p>
                   House engineer Christopher Colbert is a thirty-year veteran of live sound, studio recording, and mastering. He's worked alongside some of the biz's legendary engineers in studios around the world, mixed television performances for 120 Minutes, every late night talk show, and has a long list of FOH gigs——from Leon Bridges to The Walkmen to Mazzy Star and made or assisted on recordings for Pedro the Lion, Richard Swift, Mineral, Sixpence None the Richer, Elf Power, Nathaniel Rateliff, and countless more.
                 </p>
