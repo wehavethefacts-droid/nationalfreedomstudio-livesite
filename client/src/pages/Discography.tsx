@@ -1,6 +1,8 @@
 import PageFooter from "@/components/PageFooter";
 
 export default function Discography() {
+  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+
   const discography = [
     {
       artist: "Richard Swift",
@@ -160,23 +162,18 @@ export default function Discography() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Overlay Content */}
+      {/* Hero Section */}
       <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
-        {/* Black Background */}
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
-        
-        {/* White Grainy Dots Overlay */}
         <div
           className="absolute inset-0 w-full h-full z-5"
           style={{
-            backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png')",
+            backgroundImage: `url('${noiseUrl}')`,
             backgroundSize: 'auto',
             backgroundRepeat: 'repeat',
             opacity: 0.3,
           }}
         />
-
-        {/* Content Overlay */}
         <div className="relative z-10 px-4 md:px-8 py-4 md:py-6 max-w-3xl ml-2 md:ml-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
             /// DISCOGRAPHY
@@ -187,24 +184,36 @@ export default function Discography() {
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="relative w-full py-4 md:py-8 bg-white">
-        <div className="max-w-6xl mx-auto px-4 md:px-12">
-          <div className="space-y-4">
+      {/* Content Section with Distressed Background */}
+      <section
+        className="relative w-full py-16 md:py-20"
+        style={{
+          backgroundImage: `url('${noiseUrl}')`,
+          backgroundColor: '#f9f9f9',
+          backgroundSize: 'auto',
+          backgroundRepeat: 'repeat',
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <div className="space-y-8">
             {discography.map((artist, idx) => (
-              <div key={idx} className="border-b border-gray-300 pb-4 last:border-b-0">
-                <h3 className="text-lg md:text-xl font-bold mb-2" style={{fontFamily: "'Special Elite', serif"}}>
-                  {artist.artist}
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {artist.albums.map((album, albumIdx) => (
-                    <div key={albumIdx} className="flex items-start">
-                      <span className="text-gray-400 mr-3 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>——</span>
-                      <div className="flex-1">
-                        <p className="font-bold text-gray-900 text-sm" style={{fontFamily: "'Inconsolata', monospace"}}>
-                          {album.title}
+              <div key={idx}>
+                <div className="flex gap-8 md:gap-12 mb-6">
+                  {/* Artist Name */}
+                  <div className="w-32 md:w-40 flex-shrink-0">
+                    <h3 className="text-base md:text-lg font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
+                      {artist.artist}
+                    </h3>
+                  </div>
+                  
+                  {/* Albums Grid */}
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
+                    {artist.albums.map((album, albumIdx) => (
+                      <div key={albumIdx} style={{paddingLeft: '1.5rem', textIndent: '-1.5rem'}}>
+                        <p className="font-bold text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
+                          —— {album.title}
                         </p>
-                        <p className="text-xs text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <p className="text-xs md:text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace"}}>
                           <span style={{color: '#00FF00'}}>///</span>{album.year}
                           {album.note && <span className="ml-2 italic">{album.note}</span>}
                           <a href={album.url} className="ml-3 text-green-500 hover:text-green-600 font-bold">
@@ -212,22 +221,25 @@ export default function Discography() {
                           </a>
                         </p>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
+                
+                {/* Divider */}
+                <hr className="border-gray-300 my-6" />
               </div>
             ))}
           </div>
 
           {/* CTA Section */}
-          <div className="mt-12 text-center">
-            <p className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Inconsolata', monospace"}}>
+          <div className="mt-16 text-center pb-4 md:pb-6">
+            <p className="text-lg md:text-3xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
             <a
               href="/contact"
-              className="inline-block px-6 py-3 border-2 border-green-400 text-green-400 font-bold hover:bg-green-400 hover:text-black transition-colors"
-              style={{fontFamily: "'Special Elite', serif"}}
+              className="inline-block px-6 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-sm md:text-base"
+              style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.1em'}}
             >
               CONTACT
             </a>
