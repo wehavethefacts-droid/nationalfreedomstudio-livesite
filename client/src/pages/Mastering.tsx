@@ -59,7 +59,7 @@ export default function Mastering() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Left Column - Info */}
             <div>
-              <h2 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
+              <h2 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', marginTop: '-15px'}}>
                 /// INFO & ETC.
               </h2>
               
