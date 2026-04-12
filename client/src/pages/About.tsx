@@ -82,19 +82,21 @@ export default function About() {
 
           <hr className="border-gray-300 my-12" />
 
-          {/* Damien Jurado & R. Swift Section */}
-          <div className="mb-12">
-            <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
-              <p className="font-bold">/// Damien Jurado & R. Swift</p>
-              <p className="text-xs text-gray-600">/// Photo: Sarah Jurado</p>
-            </div>
-          </div>
-
-          {/* Richard Swift Tribute - Black Box */}
-          <div className="bg-black text-white p-8 md:p-12 mb-12">
-            <h3 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
-              /// A NOTE ABOUT SWIFT
-            </h3>
+          {/* Richard Swift Tribute - Black Box with Background Image */}
+          <div className="bg-black text-white p-8 md:p-12 mb-12 relative" style={{
+            backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="2" /></filter><rect width="100" height="100" fill="%23000000" /><rect width="100" height="100" fill="%23ffffff" opacity="0.02" filter="url(%23noise)" /></svg>')`,
+            backgroundSize: '100px 100px'
+          }}>
+            <div className="relative z-10">
+              <h3 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
+                /// A NOTE ABOUT SWIFT
+              </h3>
+              
+              {/* Photo and Caption */}
+              <div className="mb-8">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/swift-dj(2)_67bd3622.jpg" alt="Richard Swift and Damien Jurado" className="w-full mb-3" />
+                <p className="text-xs" style={{fontFamily: "'Inconsolata', monospace"}}>/// Damien Jurado & R. Swift — Photo: Sarah Jurado</p>
+              </div>
             
             <div className="space-y-4 text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
               <p>
@@ -108,6 +110,7 @@ export default function About() {
               <p>
                 You can also show your support and pick up some rad 7"s and merch at <span style={{color: '#d97a9a'}}>THE FUGYEP SOUNDATION</span>.
               </p>
+            </div>
             </div>
           </div>
 
