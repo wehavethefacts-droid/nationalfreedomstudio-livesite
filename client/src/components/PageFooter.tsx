@@ -9,7 +9,7 @@ export default function PageFooter() {
     <footer className="relative w-full">
       {/* Backslash Divider */}
       <div
-        className="relative w-full mt-0 md:mt-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full mt-0 md:mt-0 h-24 md:h-48 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${noiseUrl}'), url('${backslashUrl}')`,
           backgroundSize: 'auto, auto 100%',
@@ -34,7 +34,7 @@ export default function PageFooter() {
       >
         <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
           {/* Studio Info Box */}
-          <div className="max-w-xl mt-auto md:ml-auto mx-auto p-5 bg-black">
+          <div className="max-w-xl mt-auto md:ml-auto mx-auto p-5 bg-black relative">
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
@@ -84,6 +84,12 @@ export default function PageFooter() {
               </ul>
             </nav>
             <hr className="border-gray-600 mt-4 mb-4" />
+            
+            {/* Desktop Copyright - nested inside nav box */}
+            <div className="hidden md:block text-xs font-mono text-gray-500 space-y-1">
+              <p>/// © 2020 - 2026 National Freedom Studio</p>
+              <p>/// Site by T.rox</p>
+            </div>
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}
@@ -93,10 +99,6 @@ export default function PageFooter() {
               alt="Buffalo Head"
               className="max-h-96 object-contain"
             />
-            <div className="text-xs font-mono text-gray-500 space-y-1 text-center">
-              <p>/// © 2020 - 2026 National Freedom Studio</p>
-              <p>/// Site by T.rox</p>
-            </div>
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
