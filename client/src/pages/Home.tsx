@@ -129,11 +129,7 @@ export default function Home() {
               alt="Buffalo Head"
               className="max-h-96 object-contain mb-4"
             />
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo(3)_02c7880e.svg"
-              alt="National Freedom"
-              className="max-w-xs object-contain"
-            />
+
           </div>
         </div>
 
