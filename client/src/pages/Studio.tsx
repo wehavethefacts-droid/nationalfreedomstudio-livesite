@@ -55,9 +55,9 @@ export default function Studio() {
         />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           {/* Masonry Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[200px] md:auto-rows-[250px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[200px] md:auto-rows-[250px]">
             {/* First row: Control Room full-width */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+            <div className="relative overflow-hidden group col-span-1 md:col-span-4">
               <img
                 src={studioPhotos[0].url}
                 alt={studioPhotos[0].label}
@@ -101,7 +101,7 @@ export default function Studio() {
             </div>
 
             {/* Third row: Full width Main Room */}
-            <div className="relative overflow-hidden group col-span-2 md:col-span-4">
+            <div className="relative overflow-hidden group col-span-1 md:col-span-4">
               <img
                 src={studioPhotos[3].url}
                 alt={studioPhotos[3].label}
