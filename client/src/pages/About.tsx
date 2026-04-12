@@ -46,7 +46,7 @@ export default function About() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left Column */}
-              <div className="space-y-3 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div className="space-y-3 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace", marginTop: '-10px'}}>
                 <p>
                   Located in Cottage Grove, 20min south of Eugene, Oregon, National Freedom is more than an incredible place to record; it's a place to clear out the urban claptrap, take a bucolic walk in nearby nature, and even enjoy the charm of a small town Main Street——a short walk from the studio.
                 </p>
