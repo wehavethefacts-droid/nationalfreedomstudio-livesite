@@ -134,7 +134,7 @@ export default function Gear() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mb-12 mt-12">
+          <div className="text-center mb-6 mt-12">
             <p className="text-lg md:text-3xl font-bold mb-6 text-black" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
