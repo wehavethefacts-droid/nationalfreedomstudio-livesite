@@ -107,7 +107,7 @@ export default function PageFooter() {
               src={buffaloUrl}
               alt="Buffalo Head"
               className="w-full max-w-xs object-contain"
-              style={{maxHeight: '300px', marginBottom: '250px'}}
+              style={{maxHeight: '300px', marginBottom: '25px'}}
             />
             <div className="text-xs font-mono text-gray-500 space-y-1 text-center">
               <p>/// © 2020 - 2026 National Freedom Studio</p>
