@@ -80,7 +80,7 @@ export default function About() {
             </div>
           </div>
 
-          <hr className="border-gray-300 my-4" />
+          <hr className="border-gray-300 my-2" />
 
           {/* Richard Swift Tribute - Black Box with Background Image */}
           <div className="bg-black text-white p-8 md:p-12 mb-12 mt-4 relative" style={{
