@@ -198,9 +198,9 @@ export default function Discography() {
           <div className="space-y-8">
             {discography.map((artist, idx) => (
               <div key={idx}>
-                <div className="flex gap-8 md:gap-12 mb-6">
+                <div className="flex gap-12 md:gap-16 mb-6">
                   {/* Artist Name */}
-                  <div className="w-32 md:w-40 flex-shrink-0">
+                  <div className="w-40 md:w-56 flex-shrink-0 pl-4 md:pl-8">
                     <h3 className="text-base md:text-lg font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
                       {artist.artist}
                     </h3>
@@ -210,10 +210,10 @@ export default function Discography() {
                   <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
                     {artist.albums.map((album, albumIdx) => (
                       <div key={albumIdx} style={{paddingLeft: '1.5rem', textIndent: '-1.5rem'}}>
-                        <p className="font-bold text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
+                        <p className="font-bold text-base md:text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
                           —— {album.title}
                         </p>
-                        <p className="text-xs md:text-sm text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5rem', textIndent: '-1.5rem'}}>
+                        <p className="text-sm md:text-base text-gray-600 mt-1" style={{fontFamily: "'Inconsolata', monospace", paddingLeft: '1.5rem', textIndent: '-1.5rem'}}>
                           <span style={{color: '#000000'}}>///</span>{album.year}
                           {album.note && <span className="ml-2 italic">{album.note}</span>}
                         </p>
