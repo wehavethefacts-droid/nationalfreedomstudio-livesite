@@ -135,13 +135,13 @@ export default function Gear() {
 
           {/* CTA Section */}
           <div className="text-center mb-12 mt-12">
-            <p className="text-xl md:text-5xl font-bold mb-6 text-black" style={{fontFamily: "'Inconsolata', monospace"}}>
+            <p className="text-lg md:text-3xl font-bold mb-6 text-black" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
             <a
               href="/contact"
-              className="inline-block px-3 py-1 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-sm"
-              style={{fontFamily: "'Inconsolata', monospace"}}
+              className="inline-block px-6 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-base md:text-lg"
+              style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.1em'}}
             >
               CONTACT
             </a>
