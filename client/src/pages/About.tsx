@@ -51,13 +51,13 @@ export default function About() {
                   Located in Cottage Grove, 20min south of Eugene, Oregon, National Freedom is more than an incredible place to record; it's a place to clear out the urban claptrap, take a bucolic walk in nearby nature, and even enjoy the charm of a small town Main Street——a short walk from the studio.
                 </p>
                 
-                <p className="font-bold">RATES</p>
-                <p>Rates are currently set on project by project basis. We need to cover costs, of course, but we also understand everyone is at a different place in their career.</p>
+                <p className="font-bold mb-1">RATES</p>
+                <p style={{marginTop: '-6px'}}>Rates are currently set on project by project basis. We need to cover costs, of course, but we also understand everyone is at a different place in their career.</p>
                 
-                <p className="font-bold">LODGING</p>
-                <p>Yep, we're off the beaten path. We're happy to work with you on lodging options while you're here.</p>
+                <p className="font-bold mb-1">LODGING</p>
+                <p style={{marginTop: '-6px'}}>Yep, we're off the beaten path. We're happy to work with you on lodging options while you're here.</p>
                 
-                <p className="font-bold">HISTORY</p>
+                <p className="font-bold mb-1">HISTORY</p>
                 <p>
                   The first National Freedom was tucked inside the utility room of a Fullerton, California 1940s bungalow. When that iMac and a bit of gear moved to Cottage Grove in 2005 with Richard Swift and his family, Christopher Colbert moved from Nashville and he and Swift got to work. Built inside an existing studio space, National Freedom has gone through many incarnations and arrangements——for a time it used only the big room. Over a decade and a half in the making, the studio is now an incredible sonic-lab + art-show + super-vibey space that is beloved by all who've recorded there.
                 </p>
