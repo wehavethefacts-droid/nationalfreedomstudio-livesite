@@ -5,7 +5,7 @@ const buffaloUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e
 const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
 const buttonMenuUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/nf_hamb_menu_045660d0.png";
 const buttonXUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/nf_hamb_x_45712f0a.png";
-const logoUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo(3)_02c7880e.svg";
+const logoUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_transparent_691f7edf.png";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,7 @@ export default function MobileMenu() {
             <img
               src={logoUrl}
               alt="National Freedom"
-              className="max-w-xs object-contain"
+              className="max-w-sm object-contain" style={{maxWidth: '200px'}}
             />
           </div>
         </div>
