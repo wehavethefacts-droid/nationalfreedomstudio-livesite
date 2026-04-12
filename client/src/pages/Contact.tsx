@@ -44,7 +44,7 @@ export default function Contact() {
                 Please tell us a LITTLE bit about your project, the dates you're looking for, and your budget. We'll get back to you ASAP:
               </p>
               
-              <a href="mailto:nationalfreedomstudio@gmail.com" className="text-lg md:text-xl font-bold text-pink-400 hover:text-pink-500 mb-8 inline-block" style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.05em'}}>
+              <a href="mailto:nationalfreedomstudio@gmail.com" className="text-lg md:text-xl font-bold text-pink-400 hover:text-pink-500 mb-4 inline-block" style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.05em'}}>
                 {'>>'} nationalfreedomstudio@gmail.com
               </a>
               
