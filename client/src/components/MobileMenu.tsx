@@ -53,15 +53,15 @@ export default function MobileMenu() {
             backgroundRepeat: 'repeat',
           }}
         >
-          <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+          <div className="min-h-screen flex flex-col items-center justify-center px-4 py-4">
             {/* Navigation Links */}
-            <nav className="mb-12 text-center space-y-6">
+            <nav className="mb-6 text-center space-y-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block text-2xl font-bold transition-colors"
+                  className="block text-lg font-bold transition-colors"
                   style={{
                     fontFamily: "'Special Elite', serif",
                     color: '#000',
@@ -76,7 +76,7 @@ export default function MobileMenu() {
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
-              className="max-h-48 object-contain mb-4"
+              className="max-h-32 object-contain mb-2"
             />
 
             {/* National Freedom Logo */}
