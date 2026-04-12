@@ -44,7 +44,7 @@ export default function About() {
               /// ABOUT THE STUDIO
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
               {/* Left Column */}
               <div className="space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
                 <p>
