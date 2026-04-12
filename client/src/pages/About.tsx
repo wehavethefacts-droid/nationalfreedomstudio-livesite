@@ -64,7 +64,7 @@ export default function About() {
               </div>
 
               {/* Right Column - Darker Background */}
-              <div className="bg-gray-300 bg-opacity-5 p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div className="p-6 md:p-8 space-y-4 text-sm md:text-base text-gray-900" style={{fontFamily: "'Inconsolata', monospace"}}>
                 <p className="font-bold mb-4">/// HOUSE ENGINEER</p>
                 <p className="font-bold">/// Christopher Colbert</p>
                 <p>
