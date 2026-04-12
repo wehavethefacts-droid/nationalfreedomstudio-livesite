@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
+      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-2 md:py-3">
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
         <div
           className="absolute inset-0 w-full h-full z-5"
@@ -17,7 +17,7 @@ export default function About() {
             opacity: 0.3,
           }}
         />
-        <div className="relative z-10 px-4 md:px-8 py-4 md:py-6 max-w-3xl ml-2 md:ml-4">
+        <div className="relative z-10 px-4 md:px-8 py-2 md:py-3 max-w-3xl ml-2 md:ml-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
             /// AB0UT
           </h1>
@@ -29,7 +29,7 @@ export default function About() {
 
       {/* Content Section with Distressed Background */}
       <section
-        className="relative w-full py-2 md:py-4"
+        className="relative w-full py-6 md:py-8"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
