@@ -100,11 +100,13 @@ export default function Gear() {
       </section>
 
       {/* Content Section */}
-      <section className="relative w-full py-2 md:py-4" style={{
+      <section className="relative w-full" style={{
         backgroundImage: `url('${noiseUrl}')`,
         backgroundColor: '#f9f9f9',
         backgroundSize: 'auto',
         backgroundRepeat: 'repeat',
+        paddingTop: 'calc(8px - 10px)',
+        paddingBottom: 'calc(16px - 10px)',
       }}>
         <div className="max-w-6xl mx-auto px-4 md:px-12">
           <div className="space-y-0">
