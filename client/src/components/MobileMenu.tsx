@@ -45,7 +45,7 @@ export default function MobileMenu() {
       {/* Full-screen Mobile Menu Overlay */}
       {isOpen && (
         <div
-          className="md:hidden fixed inset-0 z-[9998] overflow-y-auto"
+          className="md:hidden fixed inset-0 z-[9998] overflow-hidden"
           style={{
             backgroundImage: `url('${noiseUrl}')`,
             backgroundColor: '#f5f5f5',
@@ -53,7 +53,7 @@ export default function MobileMenu() {
             backgroundRepeat: 'repeat',
           }}
         >
-          <div className="min-h-screen flex flex-col items-center justify-center px-4 py-4">
+          <div className="fixed inset-0 flex flex-col items-center justify-center px-4 py-4" style={{pointerEvents: 'auto'}}>
             {/* Navigation Links */}
             <nav className="mb-6 text-center space-y-3">
               {navLinks.map((link) => (
