@@ -24,7 +24,7 @@ export default function Mastering() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-2 md:py-3">
+      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
         <div
           className="absolute inset-0 w-full h-full z-5"
