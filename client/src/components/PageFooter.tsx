@@ -40,9 +40,9 @@ export default function PageFooter() {
           marginTop: '-4rem',
         }}
       >
-        <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8">
+        <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-4">
           {/* Studio Info Box */}
-          <div className="max-w-xl mt-auto md:ml-auto mx-auto p-5 bg-black relative">
+          <div className="mt-auto md:ml-auto mx-auto p-5 bg-black relative" style={{maxWidth: 'calc(28rem - 20px)'}}>
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
@@ -101,7 +101,7 @@ export default function PageFooter() {
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}
-          <div className="hidden md:flex flex-col items-center justify-center">
+          <div className="hidden md:flex flex-col items-center justify-center" style={{marginLeft: '20px'}}>
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
@@ -110,7 +110,7 @@ export default function PageFooter() {
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
-          <div className="md:hidden flex flex-col items-center mt-8 w-full">
+          <div className="md:hidden flex flex-col items-center mt-8 w-full" style={{marginLeft: '20px'}}>
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
