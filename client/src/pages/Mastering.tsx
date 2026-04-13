@@ -124,8 +124,8 @@ export default function Mastering() {
               alt="Control Room"
               className="w-full h-auto object-cover"
             />
-            <div className="absolute bottom-0 right-0 p-3 md:p-4">
-              <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+            <div className="absolute top-0 left-0 p-3 md:p-4">
+              <p className="text-white text-lg md:text-2xl font-bold" style={{fontFamily: "'Special Elite', serif"}}>
                 /// Control Room
               </p>
             </div>
