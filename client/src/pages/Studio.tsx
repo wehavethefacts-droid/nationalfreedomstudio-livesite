@@ -31,13 +31,15 @@ export default function Studio() {
 
         {/* Content Overlay */}
         <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 ml-2.5">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
-              /// TH3 STUDIO
-            </h1>
-            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
-              Eclectic. Intimate. The right mix of vintage hunkydory and modern wizbang. This isn't a sterile, operating-room audio clinic. National Freedom is making music in someone's rad living room that feels like your own rad living room.
-            </p>
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
+            <div style={{marginLeft: '10px'}}>
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
+                /// TH3 STUDIO
+              </h1>
+              <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
+                Eclectic. Intimate. The right mix of vintage hunkydory and modern wizbang. This isn't a sterile, operating-room audio clinic. National Freedom is making music in someone's rad living room that feels like your own rad living room.
+              </p>
+            </div>
           </div>
         </div>
       </section>
