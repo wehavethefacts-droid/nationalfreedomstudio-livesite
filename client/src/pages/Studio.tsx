@@ -61,7 +61,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[0].url}
                 alt={studioPhotos[0].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
@@ -76,7 +76,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[1].url}
                 alt={studioPhotos[1].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
@@ -90,7 +90,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[2].url}
                 alt={studioPhotos[2].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
@@ -105,7 +105,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[3].url}
                 alt={studioPhotos[3].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
@@ -120,7 +120,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[4].url}
                 alt={studioPhotos[4].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
@@ -134,7 +134,7 @@ export default function Studio() {
               <img
                 src={studioPhotos[5].url}
                 alt={studioPhotos[5].label}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
