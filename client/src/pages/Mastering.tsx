@@ -117,7 +117,7 @@ export default function Mastering() {
 
       {/* Control Room Image Section */}
       <section className="relative w-full py-0 md:py-0" style={{backgroundColor: '#f9f9f9'}}>
-        <div className="w-full px-4 md:px-8 relative z-10">
+        <div className="w-full px-2 md:px-4 relative z-10">
           <div className="relative">
             <img
               src={controlRoomUrl}
@@ -135,7 +135,7 @@ export default function Mastering() {
 
       {/* Backslash Divider - Overlapping Image and Footer */}
       <div
-        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full -mt-8 md:-mt-16 h-20 md:h-40 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundSize: 'auto 100%',
