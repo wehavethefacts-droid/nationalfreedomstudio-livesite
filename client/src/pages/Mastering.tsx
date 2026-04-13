@@ -135,20 +135,20 @@ export default function Mastering() {
 
       {/* Backslash Divider - Overlapping Image and Footer */}
       <div
-        className="relative w-full h-24 md:h-40 z-20 bg-contain bg-bottom bg-repeat-x"
+        className="relative w-full -mt-8 md:-mt-16 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
         style={{
           backgroundImage: `url('${backslashUrl}')`,
           backgroundSize: 'auto 100%',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'repeat-x',
-          backgroundColor: '#f9f9f9',
-          marginTop: '-5rem',
-          mixBlendMode: 'multiply',
+          backgroundAttachment: 'scroll',
         }}
       />
 
-      {/* Footer */}
-      <MasteringFooter />
+      {/* Footer - with negative margin to overlap divider */}
+      <div style={{marginTop: '-2rem', position: 'relative', zIndex: 10}}>
+        <MasteringFooter />
+      </div>
     </div>
   );
 }
