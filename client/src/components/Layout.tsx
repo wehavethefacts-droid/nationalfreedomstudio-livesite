@@ -22,7 +22,7 @@ export default function Layout({ children }: LayoutProps) {
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '35px'}}>
+          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '25px'}}>
             <img
               src="https://nationalfreedom.studio/visuals/NF_mark.svg"
               width="40"
@@ -32,7 +32,7 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block" style={{marginLeft: '-40px'}}>
+          <nav className="hidden md:block" style={{marginLeft: '-20px'}}>
             <ul className="flex items-center justify-end space-x-6">
               <li>
                 <Link href="/studio" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
