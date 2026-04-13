@@ -53,7 +53,7 @@ export default function Studio() {
             pointerEvents: 'none',
           }}
         />
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <div className="w-full px-2 md:px-4 relative z-10">
           {/* Masonry Grid */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 mb-12">
             {/* First row: Control Room full-width */}
@@ -63,7 +63,7 @@ export default function Studio() {
                 alt={studioPhotos[0].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[0].label}
@@ -78,7 +78,7 @@ export default function Studio() {
                 alt={studioPhotos[1].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[1].label}
@@ -92,7 +92,7 @@ export default function Studio() {
                 alt={studioPhotos[2].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[2].label}
@@ -107,7 +107,7 @@ export default function Studio() {
                 alt={studioPhotos[3].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[3].label}
@@ -122,7 +122,7 @@ export default function Studio() {
                 alt={studioPhotos[4].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[4].label}
@@ -136,7 +136,7 @@ export default function Studio() {
                 alt={studioPhotos[5].label}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+
               <div className="absolute bottom-0 right-0 p-3 md:p-4">
                 <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
                   {studioPhotos[5].label}
@@ -147,7 +147,7 @@ export default function Studio() {
           </div>
 
           {/* Videos Section */}
-          <div className="mt-8 pt-6">
+          <div className="mt-8 pt-6 max-w-3xl mx-auto">
             {/* First Video */}
             <div className="mb-12">
               <p className="text-white mb-4 font-serif tracking-wide" style={{fontFamily: "'Special Elite', serif"}}>
