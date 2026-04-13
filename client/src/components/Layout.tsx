@@ -32,35 +32,35 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block" style={{marginLeft: '-20px'}}>
+          <nav className="hidden md:block" style={{marginLeft: '15px'}}>
             <ul className="flex items-center justify-end space-x-6">
               <li>
-                <Link href="/studio" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/studio" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   Studio
                 </Link>
               </li>
               <li>
-                <Link href="/gear" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/gear" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   g3ar
                 </Link>
               </li>
               <li>
-                <Link href="/discography" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/discography" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   disc0g
                 </Link>
               </li>
               <li>
-                <Link href="/mastering" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/mastering" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   mast3ring
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/about" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   ab0ut
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/contact" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   contact
                 </Link>
               </li>
