@@ -20,7 +20,7 @@ export default function Layout({ children }: LayoutProps) {
         backgroundSize: 'auto',
         backgroundRepeat: 'repeat'
       }}>
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 md:pr-0 flex justify-between items-center">
           {/* Logo and Navigation Group */}
           <div className="flex items-center">
             {/* Logo */}
@@ -71,7 +71,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center space-x-3 md:space-x-5" style={{marginRight: '15px'}}>
+          <div className="flex items-center space-x-3 md:space-x-5">
             <a
               href="https://www.instagram.com/nationalfreedomstudio"
               rel="noopener noreferrer"
