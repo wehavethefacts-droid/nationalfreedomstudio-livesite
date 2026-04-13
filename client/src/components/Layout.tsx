@@ -15,14 +15,14 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="w-full py-2 overflow-hidden bg-white border-b border-gray-200 relative" style={{
+      <header className="w-full py-4 md:py-5 overflow-hidden bg-white border-b border-gray-200 relative" style={{
         backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png)',
         backgroundSize: 'auto',
         backgroundRepeat: 'repeat'
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity">
+          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '20px'}}>
             <img
               src="https://nationalfreedom.studio/visuals/NF_mark.svg"
               width="40"
@@ -32,35 +32,35 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block">
-            <ul className="flex items-center justify-end space-x-8">
+          <nav className="hidden md:block" style={{marginLeft: '-40px'}}>
+            <ul className="flex items-center justify-end space-x-6">
               <li>
-                <Link href="/studio" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/studio" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   Studio
                 </Link>
               </li>
               <li>
-                <Link href="/gear" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/gear" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   g3ar
                 </Link>
               </li>
               <li>
-                <Link href="/discography" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/discography" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   disc0g
                 </Link>
               </li>
               <li>
-                <Link href="/mastering" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/mastering" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   mast3ring
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/about" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   ab0ut
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-bold tracking-wider uppercase text-sm hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
+                <Link href="/contact" className="font-bold tracking-wider uppercase text-base hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   contact
                 </Link>
               </li>
