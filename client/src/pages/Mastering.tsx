@@ -116,7 +116,7 @@ export default function Mastering() {
       </section>
 
       {/* Control Room Image Section */}
-      <section className="relative w-full py-0 md:py-0 bg-black">
+      <section className="relative w-full py-0 md:py-0" style={{backgroundColor: '#f9f9f9'}}>
         <div className="w-full px-4 md:px-8 relative z-10">
           <div className="relative">
             <img
