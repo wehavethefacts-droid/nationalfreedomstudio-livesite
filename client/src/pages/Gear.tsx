@@ -101,14 +101,14 @@ export default function Gear() {
       </section>
 
       <section
-        className="relative w-full py-16 md:py-20"
+        className="relative w-full py-12 md:py-16"
         style={{
           backgroundImage: `url('${noiseUrl}')`,
           backgroundColor: '#f9f9f9',
           backgroundSize: 'auto',
           backgroundRepeat: 'repeat',
         }}>
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 md:ml-8">
           <div className="space-y-0">
             {gearCategories.map((category, idx) => (
               <div key={idx} className="border-b border-gray-300 last:border-b-0">
