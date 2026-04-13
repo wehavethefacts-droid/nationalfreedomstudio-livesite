@@ -18,11 +18,11 @@ export default function Contact() {
           }}
         />
         <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-3">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-3 ml-2.5">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
               /// CONTACT
             </h1>
-            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
+            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
               Tell us about your project. Or just say hello.
             </p>
           </div>

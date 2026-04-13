@@ -36,11 +36,11 @@ export default function Mastering() {
           }}
         />
         <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 ml-2.5">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
               /// MASTERING
             </h1>
-            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
+            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
               National Freedom offers mastering services with a bunch of options for deliverables.
             </p>
           </div>
