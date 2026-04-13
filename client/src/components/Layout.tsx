@@ -71,7 +71,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center space-x-3 md:space-x-5">
+          <div className="flex items-center space-x-3 md:space-x-5" style={{marginRight: '-15px'}}>
             <a
               href="https://www.instagram.com/nationalfreedomstudio"
               rel="noopener noreferrer"
