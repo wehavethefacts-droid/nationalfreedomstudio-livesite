@@ -10,7 +10,7 @@ export default function PageFooter() {
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    (e.currentTarget as HTMLAnchorElement).style.color = '#888';
+    (e.currentTarget as HTMLAnchorElement).style.color = '#6b7280';
   };
 
   return (
@@ -58,34 +58,34 @@ export default function PageFooter() {
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-3 gap-6 text-base font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em', color: '#888'}}>
+              <ul className="grid grid-cols-3 gap-6 text-base font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em', color: '#6b7280'}}>
                 <li>
-                  <Link href="/studio" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/studio" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///STUDIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/gear" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///G3AR
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/discography" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///DISC0G
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/mastering" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///MAST3RING
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/about" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///AB0UT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
+                  <Link href="/contact" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///C0NT4CT
                   </Link>
                 </li>
