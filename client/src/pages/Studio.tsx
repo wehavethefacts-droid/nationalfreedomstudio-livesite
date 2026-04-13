@@ -147,7 +147,7 @@ export default function Studio() {
           </div>
 
           {/* Videos Section */}
-          <div className="mt-8 pt-6 max-w-4xl mx-auto">
+          <div className="mt-8 pt-6 max-w-5xl mx-auto">
             {/* First Video */}
             <div className="mb-12">
               <p className="text-white mb-4 font-serif tracking-wide" style={{fontFamily: "'Special Elite', serif"}}>
@@ -195,7 +195,7 @@ export default function Studio() {
 
           {/* CTA Section */}
           <div className="text-center mb-12 mt-12">
-            <p className="text-xl md:text-5xl font-bold mb-6 text-white" style={{fontFamily: "'Special Elite', serif"}}>
+            <p className="text-xl md:text-3xl font-bold mb-6 text-white" style={{fontFamily: "'Special Elite', serif"}}>
               Wanna book? Got questions?
             </p>
             <a
