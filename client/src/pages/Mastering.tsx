@@ -2,6 +2,8 @@ import PageFooter from "@/components/PageFooter";
 
 export default function Mastering() {
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
+  const controlRoomUrl = "https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg";
 
   const clients = [
     "Nathaniel Rateliff",
@@ -112,6 +114,37 @@ export default function Mastering() {
           </div>
         </div>
       </section>
+
+      {/* Control Room Image Section */}
+      <section className="relative w-full py-0 md:py-0 bg-black">
+        <div className="w-full px-2 md:px-4 relative z-10">
+          <div className="relative overflow-hidden">
+            <img
+              src={controlRoomUrl}
+              alt="Control Room"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 right-0 p-3 md:p-4">
+              <p className="text-white text-xs md:text-sm font-bold text-right" style={{fontFamily: "'Special Elite', serif"}}>
+                /// Control Room
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Backslash Divider */}
+      <div
+        className="relative w-full mt-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        style={{
+          backgroundImage: `url('${backslashUrl}')`,
+          backgroundSize: 'auto 100%',
+          backgroundPosition: 'bottom',
+          backgroundRepeat: 'repeat-x',
+          backgroundAttachment: 'scroll',
+          backgroundColor: '#f9f9f9',
+        }}
+      />
 
       {/* Footer */}
       <PageFooter />
