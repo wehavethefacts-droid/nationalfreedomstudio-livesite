@@ -147,7 +147,7 @@ export default function Studio() {
           </div>
 
           {/* Videos Section */}
-          <div className="mt-8 pt-6 max-w-3xl mx-auto">
+          <div className="mt-8 pt-6 max-w-4xl mx-auto">
             {/* First Video */}
             <div className="mb-12">
               <p className="text-white mb-4 font-serif tracking-wide" style={{fontFamily: "'Special Elite', serif"}}>
