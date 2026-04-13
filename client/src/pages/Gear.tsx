@@ -108,7 +108,7 @@ export default function Gear() {
           backgroundSize: 'auto',
           backgroundRepeat: 'repeat',
         }}>
-        <div className="max-w-6xl mx-auto px-4 md:px-8 md:ml-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-12">
           <div className="space-y-0">
             {gearCategories.map((category, idx) => (
               <div key={idx} className="border-b border-gray-300 last:border-b-0">
