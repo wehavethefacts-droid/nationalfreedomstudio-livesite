@@ -73,11 +73,8 @@ export default function Gear() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Overlay Content */}
-      <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-4 md:py-6">
-        {/* Black Background */}
+          <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-2 md:py-3">
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
-        
-        {/* White Grainy Dots Overlay */}
         <div
           className="absolute inset-0 w-full h-full z-5"
           style={{
@@ -90,7 +87,7 @@ export default function Gear() {
 
         {/* Content Overlay */}
         <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-3">
             <div style={{marginLeft: '10px'}}>
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
                 /// G3AR

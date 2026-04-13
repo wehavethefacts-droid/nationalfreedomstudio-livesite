@@ -36,7 +36,7 @@ export default function Mastering() {
           }}
         />
         <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-3">
             <div style={{marginLeft: '10px'}}>
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
                 /// MASTERING
