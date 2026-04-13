@@ -15,14 +15,14 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="w-full py-4 md:py-5 overflow-hidden bg-white border-b border-gray-200 relative" style={{
+      <header className="w-full py-3 md:py-4 overflow-hidden bg-white border-b border-gray-200 relative" style={{
         backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png)',
         backgroundSize: 'auto',
         backgroundRepeat: 'repeat'
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '20px'}}>
+          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '35px'}}>
             <img
               src="https://nationalfreedom.studio/visuals/NF_mark.svg"
               width="40"
