@@ -115,10 +115,10 @@ export default function Mastering() {
         </div>
       </section>
 
-      {/* Control Room Image Section */}
+      {/* Control Room Image Section with Overlapping Slashes */}
       <section className="relative w-full py-0 md:py-0 bg-black">
-        <div className="w-full px-2 md:px-4 relative z-10">
-          <div className="relative overflow-hidden">
+        <div className="w-full px-4 md:px-8 relative z-10">
+          <div className="relative">
             <img
               src={controlRoomUrl}
               alt="Control Room"
@@ -129,22 +129,23 @@ export default function Mastering() {
                 /// Control Room
               </p>
             </div>
+            {/* Overlapping Backslash Divider */}
+            <div
+              className="absolute bottom-0 left-0 right-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+              style={{
+                backgroundImage: `url('${backslashUrl}')`,
+                backgroundSize: 'auto 100%',
+                backgroundPosition: 'bottom',
+                backgroundRepeat: 'repeat-x',
+                marginTop: '-4rem',
+              }}
+            />
           </div>
         </div>
       </section>
 
-      {/* Backslash Divider */}
-      <div
-        className="relative w-full mt-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
-        style={{
-          backgroundImage: `url('${backslashUrl}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'bottom',
-          backgroundRepeat: 'repeat-x',
-          backgroundAttachment: 'scroll',
-          backgroundColor: '#f9f9f9',
-        }}
-      />
+      {/* Spacing for slash transition */}
+      <div className="relative w-full h-16 md:h-32" style={{backgroundColor: '#f9f9f9'}} />
 
       {/* Footer */}
       <PageFooter />
