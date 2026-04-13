@@ -55,7 +55,7 @@ export default function Studio() {
         />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           {/* Masonry Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[300px] md:auto-rows-[350px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 mb-12 auto-rows-[400px] md:auto-rows-[500px]">
             {/* First row: Control Room full-width */}
             <div className="relative overflow-hidden group col-span-1 md:col-span-4">
               <img
