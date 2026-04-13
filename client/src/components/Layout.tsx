@@ -21,19 +21,21 @@ export default function Layout({ children }: LayoutProps) {
         backgroundRepeat: 'repeat'
       }}>
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '25px'}}>
-            <img
-              src="https://nationalfreedom.studio/visuals/NF_mark.svg"
-              width="40"
-              height="40"
-              alt="National Freedom Studio"
-            />
-          </Link>
+          {/* Logo and Navigation Group */}
+          <div className="flex items-center">
+            {/* Logo */}
+            <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '25px'}}>
+              <img
+                src="https://nationalfreedom.studio/visuals/NF_mark.svg"
+                width="40"
+                height="40"
+                alt="National Freedom Studio"
+              />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:block" style={{marginLeft: '15px'}}>
-            <ul className="flex items-center justify-end space-x-6">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:block" style={{marginLeft: '15px'}}>
+              <ul className="flex items-center space-x-6">
               <li>
                 <Link href="/studio" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   Studio
@@ -64,8 +66,9 @@ export default function Layout({ children }: LayoutProps) {
                   contact
                 </Link>
               </li>
-            </ul>
-          </nav>
+              </ul>
+            </nav>
+          </div>
 
           {/* Social Icons */}
           <div className="flex items-center space-x-3 md:space-x-5">
