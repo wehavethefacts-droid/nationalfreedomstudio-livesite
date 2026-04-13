@@ -5,6 +5,14 @@ export default function PageFooter() {
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
   const buffaloUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png";
 
+  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a';
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    (e.currentTarget as HTMLAnchorElement).style.color = '#888';
+  };
+
   return (
     <footer className="relative w-full">
       {/* Backslash Divider */}
@@ -50,34 +58,34 @@ export default function PageFooter() {
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-2 gap-6 text-sm font-bold" style={{fontFamily: "'Special Elite', serif"}}>
+              <ul className="grid grid-cols-3 gap-6 text-base font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em', color: '#888'}}>
                 <li>
-                  <Link href="/studio" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/studio" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///STUDIO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gear" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/gear" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///G3AR
                   </Link>
                 </li>
                 <li>
-                  <Link href="/discography" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/discography" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///DISC0G
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mastering" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/mastering" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///MAST3RING
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/about" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///AB0UT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="transition-colors" style={{color: '#999'}} onMouseEnter={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a'} onMouseLeave={(e) => (e.currentTarget as HTMLAnchorElement).style.color = '#999'}>
+                  <Link href="/contact" className="transition-colors" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{color: '#888'}}>
                     ///C0NT4CT
                   </Link>
                 </li>
@@ -86,7 +94,7 @@ export default function PageFooter() {
             <hr className="hidden md:block border-gray-600 mt-4 mb-4" />
             
             {/* Desktop Copyright - nested inside nav box */}
-            <div className="hidden md:block text-xs font-mono text-gray-500 space-y-1">
+            <div className="hidden md:block text-xs font-mono text-gray-400 space-y-1">
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>
