@@ -1,4 +1,4 @@
-import PageFooter from "@/components/PageFooter";
+import MasteringFooter from "@/components/MasteringFooter";
 
 export default function Mastering() {
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
@@ -115,7 +115,7 @@ export default function Mastering() {
         </div>
       </section>
 
-      {/* Control Room Image Section with Overlapping Slashes */}
+      {/* Control Room Image Section */}
       <section className="relative w-full py-0 md:py-0 bg-black">
         <div className="w-full px-4 md:px-8 relative z-10">
           <div className="relative">
@@ -129,26 +129,25 @@ export default function Mastering() {
                 /// Control Room
               </p>
             </div>
-            {/* Overlapping Backslash Divider */}
-            <div
-              className="absolute bottom-0 left-0 right-0 h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
-              style={{
-                backgroundImage: `url('${backslashUrl}')`,
-                backgroundSize: 'auto 100%',
-                backgroundPosition: 'bottom',
-                backgroundRepeat: 'repeat-x',
-                marginTop: '-4rem',
-              }}
-            />
           </div>
         </div>
       </section>
 
-      {/* Spacing for slash transition */}
-      <div className="relative w-full h-16 md:h-32" style={{backgroundColor: '#f9f9f9'}} />
+      {/* Backslash Divider - Overlapping Image and Footer */}
+      <div
+        className="relative w-full h-16 md:h-32 z-20 bg-contain bg-bottom bg-repeat-x"
+        style={{
+          backgroundImage: `url('${backslashUrl}')`,
+          backgroundSize: 'auto 100%',
+          backgroundPosition: 'bottom',
+          backgroundRepeat: 'repeat-x',
+          backgroundColor: '#f9f9f9',
+          marginTop: '-2rem',
+        }}
+      />
 
       {/* Footer */}
-      <PageFooter />
+      <MasteringFooter />
     </div>
   );
 }
