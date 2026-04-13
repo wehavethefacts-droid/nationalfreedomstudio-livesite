@@ -89,13 +89,15 @@ export default function Gear() {
         />
 
         {/* Content Overlay */}
-        <div className="relative z-10 px-4 md:px-8 py-4 md:py-6 max-w-3xl ml-2 md:ml-9">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
-            /// G3AR
-          </h1>
-          <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
-            We have everything a first-class, modern studio requires——plus a grip of vintage electronics and instruments to make some original noise.
-          </p>
+        <div className="relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
+              /// G3AR
+            </h1>
+            <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace"}}>
+              We have everything a first-class, modern studio requires——plus a grip of vintage electronics and instruments to make some original noise.
+            </p>
+          </div>
         </div>
       </section>
 
