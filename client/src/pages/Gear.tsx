@@ -92,7 +92,7 @@ export default function Gear() {
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
                 /// G3AR
               </h1>
-              <p className="text-white text-base md:text-lg font-bold leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
+              <p className="text-white text-base md:text-lg leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
                 We have everything a first-class, modern studio requires——plus a grip of vintage electronics and instruments to make some original noise.
               </p>
             </div>
