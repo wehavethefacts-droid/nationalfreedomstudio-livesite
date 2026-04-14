@@ -65,11 +65,11 @@ export default function Mastering() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Left Column - Info */}
             <div>
-              <h2 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', marginTop: '-15px'}}>
+              <h2 className="text-xl md:text-2xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em', marginTop: '-15px'}}>
                 /// INFO & ETC.
               </h2>
               
-              <div className="space-y-4 text-gray-900 text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div className="space-y-4 text-gray-900 text-base md:text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
                 <p>
                   Mastering engineer <span className="font-bold">Christopher Colbert</span> <span style={{color: '#d97a9a'}}>(who's also the house engineer)</span> brings his 40 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it.
                 </p>
@@ -87,11 +87,11 @@ export default function Mastering() {
 
             {/* Right Column - Clients */}
             <div className="p-6 md:p-8" style={{backgroundColor: 'rgba(150, 150, 150, 0.25)'}}>
-              <h3 className="text-lg md:text-xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
+              <h3 className="text-xl md:text-2xl font-bold mb-6" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.15em'}}>
                 /// A SELECTION OF CLIENTS
               </h3>
               
-              <div className="grid grid-cols-2 gap-4 text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div className="grid grid-cols-2 gap-4 text-base md:text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
                 {clients.map((client, idx) => (
                   <p key={idx} className="font-bold">{client}</p>
                 ))}
