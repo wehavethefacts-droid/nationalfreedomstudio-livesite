@@ -80,7 +80,7 @@ export default function MasteringFooter() {
             <hr className="hidden md:block border-gray-600 mt-4 mb-4" />
             
             {/* Desktop Copyright - nested inside nav box */}
-            <div className="hidden md:block text-xs font-mono text-gray-400 space-y-1">
+            <div className="hidden md:block text-sm font-mono space-y-1" style={{color: '#6b7280'}}>
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>
@@ -103,7 +103,7 @@ export default function MasteringFooter() {
               className="w-full max-w-xs object-contain"
               style={{maxHeight: '300px', marginBottom: '25px'}}
             />
-            <div className="text-xs font-mono text-gray-500 space-y-1 text-center">
+            <div className="text-sm font-mono space-y-1 text-center" style={{color: '#6b7280'}}>
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>

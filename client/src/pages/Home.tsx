@@ -124,7 +124,7 @@ export default function Home() {
               </ul>
             </nav>
             <hr className="hidden md:block border-gray-600 mt-4 mb-4" />
-            <div className="hidden md:block text-xs font-mono text-gray-400 space-y-1">
+            <div className="hidden md:block text-sm font-mono space-y-1" style={{color: '#6b7280'}}>
               <p>/// © 2020 - 2026 National Freedom Studio</p>
               <p>/// Site by T.rox</p>
             </div>
@@ -146,9 +146,10 @@ export default function Home() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
             alt="Buffalo Head"
-            className="w-full max-w-xs object-contain" style={{maxHeight: '300px', marginBottom: '25px'}}
+            className="w-full max-w-xs object-contain"
+            style={{maxHeight: '300px', marginBottom: '25px'}}
           />
-          <div className="text-center text-xs font-mono text-gray-500 space-y-1">
+          <div className="text-sm font-mono space-y-1 text-center" style={{color: '#6b7280'}}>
             <p>/// © 2020 - 2026 National Freedom Studio</p>
             <p>/// Site by T.rox</p>
           </div>
