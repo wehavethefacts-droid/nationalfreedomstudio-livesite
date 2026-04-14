@@ -36,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:block" style={{marginLeft: '20px'}}>
-              <ul className="flex items-center space-x-6">
+              <ul className="flex items-center space-x-8">
               <li>
                 <Link href="/studio" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
                   Studio
@@ -64,7 +64,7 @@ export default function Layout({ children }: LayoutProps) {
               </li>
               <li>
                 <Link href="/contact" className="font-bold tracking-wider uppercase text-lg hover:text-blue-600 transition-colors" style={{fontFamily: "'Special Elite', serif"}}>
-                  c0ntact
+                  cont4ct
                 </Link>
               </li>
               </ul>
