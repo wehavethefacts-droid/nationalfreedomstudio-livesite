@@ -19,7 +19,7 @@ export default function Contact() {
         />
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-3">
-            <div style={{marginLeft: '10px', paddingTop: '12px', paddingBottom: '12px'}}>
+            <div style={{marginLeft: '10px', paddingTop: '20px', paddingBottom: '20px'}}>
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.02em'}}>
                 /// CONTACT
               </h1>
