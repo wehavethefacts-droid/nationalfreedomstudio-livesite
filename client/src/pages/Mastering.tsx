@@ -71,7 +71,7 @@ export default function Mastering() {
               
               <div className="space-y-4 text-gray-900 text-sm md:text-base" style={{fontFamily: "'Inconsolata', monospace"}}>
                 <p>
-                  Mastering engineer <span className="font-bold">Christopher Colbert</span> <span style={{color: '#d97a9a'}}>(who's also the house engineer)</span> brings his 30 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it.
+                  Mastering engineer <span className="font-bold">Christopher Colbert</span> <span style={{color: '#d97a9a'}}>(who's also the house engineer)</span> brings his 40 years of biz experience and seasoned ears to making your masters sound amazing across the frickin' myriad platforms we got these days. Digital or tape or both, we can do it.
                 </p>
                 
                 <p>He's also quite the egalitarian.</p>
