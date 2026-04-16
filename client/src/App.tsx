@@ -14,8 +14,8 @@ import Mastering from "./pages/Mastering";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <>
       <MobileMenu />

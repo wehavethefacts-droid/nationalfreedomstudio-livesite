@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import { useAuth } from "@/_core/hooks/useAuth";
 
 const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
   (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a';
@@ -10,10 +9,6 @@ const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
 };
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
 
