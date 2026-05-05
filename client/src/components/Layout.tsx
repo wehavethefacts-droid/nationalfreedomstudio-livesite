@@ -27,7 +27,7 @@ export default function Layout({ children }: LayoutProps) {
             {/* Logo */}
             <Link href="/" className="flex items-center hover:opacity-75 transition-opacity" style={{marginLeft: '25px'}}>
               <img
-                src="https://nationalfreedom.studio/visuals/NF_mark.svg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_mark_aef5da0b.png"
                 width="40"
                 height="40"
                 alt="National Freedom Studio"
