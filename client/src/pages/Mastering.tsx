@@ -3,7 +3,7 @@ import MasteringFooter from "@/components/MasteringFooter";
 export default function Mastering() {
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const controlRoomUrl = "https://nationalfreedom.studio/visuals/NF_control-wide_01.jpg";
+  const controlRoomUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_968a08b3.jpg";
 
   const clients = [
     "Nathaniel Rateliff",
