@@ -1,0 +1,41 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "db",
+    "server",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://75tbHcMbuKiUo7o.root:JMIJ1LNO1J37C6cm1HuE@gateway05.us-east-1.prod.aws.tidbcloud.com:4000/M6e5W9g9dsjkZnMVL2zJJv?ssl={\"rejectUnauthorized\":true}"
+  },
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv",
+    "access_key_id": "ASIAZV3A2ECZMTHKBCMJ",
+    "secret_access_key": "i3ExzcPzyl3ir9kYYg1hRRnFbwZ4VBhuJFlzjJju",
+    "session_token": "IQoJb3JpZ2luX2VjELz//////////wEaCXVzLWVhc3QtMSJHMEUCIQC1VEbeRPOJRWFKLpfRkNGqsfl0Ho6WOzZyYfTi/0xlUQIgdiD3Z9pHVn2OVcbky9TlelOp77M1/G6LG4f77geWOuoq/wMIhf//////////ARAEGgw2NjUzODYwOTg4NjYiDGzpYp2FYFHqRGvl6yrTA6VHRi1nU4WwnOWX4PJt2r7c0k/ywbwcPnQ2oy1Q4kKeNPtzhvXuxwQCIQCBa0z/2LEsdd4xt/WGGvoC+MlBRFzXoYfHRZjQv3IQsNunJ++/XR+AKz8wX/wTejPOpJgxVcVG5sn5S7mHxbW5BHiZChvqOdk/xR/XFXH2oubvEYGr0Bc8+hI2RH03hGu2J8mUG63jtm55LMM8sJ7XSiZMwqiOQzfB8Q1k7OVb/3Oj0RP3bRCz9tvstgnaNG8PtyBt/dd6JHHmYRNqUf6E4bEQmjZKl0gbYVU0BCVQDSEx7oRYErICH9vpGknyDi9gUKqbD4y2DaeZVbQIzD+p2Yoa27gyKv6+Z7cBw/DSxfYF/y0fiyd6C1WSch7r3BEmMrMrxyQz+2wTLIgx2tZVtcyihXypvn9xWW2vjFX+l+k4p6wEecbzczsd7chEfoQ3q2+8EN17zUVqj1iPezKDTZEiVIS18cGU7gWflQ8nv/2xLTrzGJKnqNK8fzzJWR8jArl0GuoSpbJkbZ0mm7/RC+UEqoZNfkXoMVTc9TlE8rSFlEftemqXZ+UH3wFAlBOl081L24+06d2osO1pvEVt+cUVbbZyE5agvjK08KcGArnMjtBNHCgaMLzJn9AGOp0BwjYMmyHFuOYL6Yf7A1hUiPrkYaLvKjdDr6W0zXOckWICRUv7DeqJpC5ghqPG/cmRYSceiwO8uT4nCyhYGGW1pBFFfvbq7Es0SwilsN6Oo7beJfPy+Sw8zg/hG3HyOQvIQxLM8B2g3JtpFVT8IhW/CgZUitqT8zlgT8XKpv5vg7EgfvgTdM/1U7E8UjdtFahmod4SHTzgQTtK0Vuw+w==",
+    "expiration": "2026-05-16T15:30:04.000Z"
+  },
+  "name": "nationalfreedom-studio-copy",
+  "path": "/home/ubuntu/nationalfreedom-studio-copy",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "cdoJNLP7fj6yJ66pzN6ZkP",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "ngTfgDfhG2ZoZiw5HSjJEm",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Jonathan Behr",
+    "OWNER_OPEN_ID": "5HjbLH4C7V2qcLDGHLUeAB",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "3a1c5f79-631e-40e6-bdce-1b70292df6b1",
+    "VITE_APP_ID": "M6e5W9g9dsjkZnMVL2zJJv",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663540620790/kHvGXzDKLtKZwxvs.png",
+    "VITE_APP_TITLE": "National Freedom Studio Copy",
+    "VITE_FRONTEND_FORGE_API_KEY": "Gwi68S43DgrNJumPwMkeps",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-db-user",
+  "test_command": "pnpm test"
+}
