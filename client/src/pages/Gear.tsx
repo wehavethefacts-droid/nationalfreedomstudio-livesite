@@ -141,7 +141,7 @@ export default function Gear() {
               Wanna book? Got questions?
             </p>
             <a
-              href="/contact"
+              href="/#/contact"
               className="inline-block px-6 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-base md:text-lg"
               style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.1em'}}
             >
