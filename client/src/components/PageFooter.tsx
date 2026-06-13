@@ -101,7 +101,7 @@ export default function PageFooter() {
           </div>
 
           {/* Buffalo Background Image (Right side on desktop) */}
-          <div className="hidden md:flex flex-col items-center justify-center" style={{marginLeft: '20px'}}>
+          <div className="hidden md:flex flex-col items-center justify-center">
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
@@ -110,7 +110,7 @@ export default function PageFooter() {
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
-          <div className="md:hidden flex flex-col items-center mt-8 w-full" style={{marginLeft: '20px'}}>
+          <div className="md:hidden flex flex-col items-center mt-8 w-full">
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
