@@ -117,7 +117,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#/contact" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <Link href="/contact" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///C0NT4CT
                   </Link>
                 </li>
