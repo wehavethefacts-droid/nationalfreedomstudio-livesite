@@ -33,7 +33,7 @@ function Router() {
       <MobileMenu />
       <Layout>
         <Switch>
-        <Route path={"\"} component={Home} />
+        <Route path={"/"} component={Home} />
         <Route path={"/studio"} component={Studio} />
         <Route path={"/gear"} component={Gear} />
         <Route path={"/discography"} component={Discography} />
