@@ -6,7 +6,7 @@ export default function Gear() {
   const gearCategories = [
     {
       title: "Console",
-      items: ["—— 1970's APSI Model 3000 24 channel recording console"]
+      items: ["—— 1988 Speck Electronics Model M72 24 channel recording console"]
     },
     {
       title: "Converters",
@@ -34,7 +34,7 @@ export default function Gear() {
     },
     {
       title: "Tape Recorders",
-      items: ["—— Studer A80 VU MKIV 2\" 16 track recorder", "—— Otari MX5050 1/2\" 8 track recorder", "—— Tascam 122 cassette recorder", "—— Tascam Portastudio 424 mkIII 4 track cassette recorder"]
+      items: ["—— Otari MX5050 1/2\" 8 track recorder", "—— Tascam 122 cassette recorder", "—— Tascam Portastudio 424 mkIII 4 track cassette recorder"]
     },
     {
       title: "Microphones",
@@ -141,7 +141,7 @@ export default function Gear() {
               Wanna book? Got questions?
             </p>
             <a
-              href="/#/contact"
+              href="/contact"
               className="inline-block px-6 py-3 border-2 border-pink-400 text-pink-400 font-bold hover:bg-pink-400 hover:text-black transition-colors text-base md:text-lg"
               style={{fontFamily: "'Inconsolata', monospace", letterSpacing: '0.1em'}}
             >
