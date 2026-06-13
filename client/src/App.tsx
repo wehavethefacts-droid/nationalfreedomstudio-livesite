@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Layout from "./components/Layout";
 import MobileMenu from "./components/MobileMenu";
@@ -15,13 +16,24 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 
+function ScrollToTop() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+}
+
 function Router() {
   return (
     <>
+      <ScrollToTop />
       <MobileMenu />
       <Layout>
         <Switch>
-        <Route path={"/"} component={Home} />
+        <Route path={"\"} component={Home} />
         <Route path={"/studio"} component={Studio} />
         <Route path={"/gear"} component={Gear} />
         <Route path={"/discography"} component={Discography} />
