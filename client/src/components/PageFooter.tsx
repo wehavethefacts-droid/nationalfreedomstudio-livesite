@@ -40,9 +40,9 @@ export default function PageFooter() {
           marginTop: '-4rem',
         }}
       >
-        <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-4">
+        <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-8 md:items-center">
           {/* Studio Info Box */}
-          <div className="mt-auto md:ml-auto mx-auto p-5 bg-black relative" style={{maxWidth: 'calc(28rem - 20px)'}}>
+          <div className="mt-auto mx-auto p-5 bg-black relative" style={{maxWidth: 'calc(28rem - 20px)'}}>
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
               /// The Studio
             </h2>
