@@ -110,11 +110,11 @@ export default function PageFooter() {
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
-          <div className="md:hidden flex flex-col items-center mt-8 w-full">
+          <div className="md:hidden flex flex-col items-center justify-center mt-8 w-full px-4">
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
-              className="w-full max-w-xs object-contain"
+              className="w-full max-w-xs object-contain mx-auto"
               style={{maxHeight: '300px', marginBottom: '25px'}}
             />
             <div className="text-sm font-mono space-y-1 text-center" style={{color: '#6b7280'}}>
