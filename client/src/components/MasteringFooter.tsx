@@ -26,7 +26,7 @@ export default function MasteringFooter() {
           marginTop: '-4rem',
         }}
       >
-        <div className="max-w-6xl mx-auto px-4 md:grid md:grid-cols-2 md:gap-4">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col md:grid md:grid-cols-2 md:gap-4 md:items-center md:justify-between">
           {/* Studio Info Box */}
           <div className="mt-auto md:ml-auto mx-auto p-5 bg-black relative" style={{maxWidth: 'calc(28rem - 20px)'}}>
             <h2 className="text-2xl font-bold leading-tight text-white mb-2" style={{fontFamily: "'Special Elite', serif"}}>
@@ -96,11 +96,11 @@ export default function MasteringFooter() {
           </div>
 
           {/* Mobile Layout: Buffalo underneath content */}
-          <div className="md:hidden flex flex-col items-center mt-8 w-full">
+          <div className="md:hidden flex flex-col items-center justify-center mt-8 w-full px-4">
             <img
               src={buffaloUrl}
               alt="Buffalo Head"
-              className="w-full max-w-xs object-contain"
+              className="w-full max-w-xs object-contain mx-auto"
               style={{maxHeight: '300px', marginBottom: '25px'}}
             />
             <div className="text-sm font-mono space-y-1 text-center" style={{color: '#6b7280'}}>
