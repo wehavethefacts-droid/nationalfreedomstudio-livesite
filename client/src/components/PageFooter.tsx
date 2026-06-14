@@ -58,7 +58,7 @@ export default function PageFooter() {
 
             {/* Footer Navigation */}
             <nav className="pt-2 pb-3">
-              <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 text-base font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em', color: '#6b7280'}}>
+              <ul className="grid grid-cols-3 gap-8 text-base font-bold" style={{fontFamily: "'Special Elite', serif", letterSpacing: '0.05em', color: '#6b7280'}}>
                 <li>
                   <Link href="/studio" className="transition-colors" style={{color: '#6b7280'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     ///STUDIO
