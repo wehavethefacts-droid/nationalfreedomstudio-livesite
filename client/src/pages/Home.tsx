@@ -1,4 +1,6 @@
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
+import { getSeoTags } from "@/lib/seoData";
 
 const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
   (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a';
@@ -11,9 +13,22 @@ const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
 export default function Home() {
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+  const seo = getSeoTags('home');
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:title" content={seo.ogTitle} />
+        <meta property="og:description" content={seo.ogDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seo.url} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seo.twitterTitle} />
+        <meta name="twitter:description" content={seo.twitterDescription} />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-black">
         {/* Video Background */}
@@ -155,6 +170,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }

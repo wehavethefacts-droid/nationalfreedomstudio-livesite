@@ -1,6 +1,9 @@
 import MasteringFooter from "@/components/MasteringFooter";
+import { Helmet } from "react-helmet-async";
+import { getSeoTags } from "@/lib/seoData";
 
 export default function Mastering() {
+  const seo = getSeoTags('mastering');
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
   const controlRoomUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_968a08b3.jpg";
@@ -24,7 +27,19 @@ export default function Mastering() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:title" content={seo.ogTitle} />
+        <meta property="og:description" content={seo.ogDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seo.url} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seo.twitterTitle} />
+        <meta name="twitter:description" content={seo.twitterDescription} />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-2 md:py-3">
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
@@ -149,6 +164,7 @@ export default function Mastering() {
       <div style={{marginTop: '-2rem', position: 'relative', zIndex: 10}}>
         <MasteringFooter />
       </div>
-    </div>
+      </div>
+    </>
   );
 }

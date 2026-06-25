@@ -1,6 +1,10 @@
 import PageFooter from "@/components/PageFooter";
 
+import { Helmet } from "react-helmet-async";
+import { getSeoTags } from "@/lib/seoData";
+
 export default function Studio() {
+  const seo = getSeoTags('studio');
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
     { label: "/// Control Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_968a08b3.jpg", colSpan: 2, rowSpan: 1 },
@@ -12,7 +16,19 @@ export default function Studio() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:title" content={seo.ogTitle} />
+        <meta property="og:description" content={seo.ogDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seo.url} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seo.twitterTitle} />
+        <meta name="twitter:description" content={seo.twitterDescription} />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section with Overlay Content */}
       <section className="relative w-full min-h-[auto] md:min-h-[auto] flex items-center justify-start bg-black overflow-hidden py-2 md:py-3">
         <div className="absolute inset-0 w-full h-full bg-black z-0" />
@@ -211,6 +227,7 @@ export default function Studio() {
       </section>
 
       <PageFooter />
-    </div>
+      </div>
+    </>
   );
 }
