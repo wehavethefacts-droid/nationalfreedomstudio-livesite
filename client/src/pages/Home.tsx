@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { getSeoTags } from "@/lib/seoData";
+import { organizationSchema } from "@/lib/schema";
 
 const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
   (e.currentTarget as HTMLAnchorElement).style.color = '#d97a9a';
@@ -27,6 +28,9 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.twitterTitle} />
         <meta name="twitter:description" content={seo.twitterDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}
