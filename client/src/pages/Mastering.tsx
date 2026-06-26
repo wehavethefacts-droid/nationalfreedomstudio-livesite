@@ -1,6 +1,7 @@
 import MasteringFooter from "@/components/MasteringFooter";
 import { Helmet } from "react-helmet-async";
 import { getSeoTags } from "@/lib/seoData";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export default function Mastering() {
   const seo = getSeoTags('mastering');
@@ -38,6 +39,9 @@ export default function Mastering() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.twitterTitle} />
         <meta name="twitter:description" content={seo.twitterDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema([{"name": "Home", "url": "https://nationalfreedomstudio.com"}, {"name": "Mastering", "url": "https://nationalfreedomstudio.com/mastering"}]))}
+        </script>
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}

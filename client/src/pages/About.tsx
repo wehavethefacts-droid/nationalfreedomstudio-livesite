@@ -1,6 +1,7 @@
 import PageFooter from "@/components/PageFooter";
 import { Helmet } from "react-helmet-async";
 import { getSeoTags } from "@/lib/seoData";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export default function About() {
   const seo = getSeoTags('about');
@@ -18,6 +19,9 @@ export default function About() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seo.twitterTitle} />
         <meta name="twitter:description" content={seo.twitterDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema([{"name": "Home", "url": "https://nationalfreedomstudio.com"}, {"name": "About", "url": "https://nationalfreedomstudio.com/about"}]))}
+        </script>
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}
