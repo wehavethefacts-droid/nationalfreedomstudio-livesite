@@ -8,7 +8,7 @@ export default function Studio() {
   const seo = getSeoTags('studio');
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
-    { label: "/// Control Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_968a08b3.jpg", colSpan: 2, rowSpan: 1 },
+    { label: "/// Control Room", url: "/manus-storage/NF_control-wide-2026_4a3633f4.webp", colSpan: 2, rowSpan: 1 },
     { label: "/// Drums + bobs & bits", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_drum-corner_01_3ff37c40.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_guitar-amps_01_aeb85bf7.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Main Room", url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_main-room_01_40cf4bff.jpg", colSpan: 2, rowSpan: 1 },

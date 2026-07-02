@@ -7,7 +7,7 @@ export default function Mastering() {
   const seo = getSeoTags('mastering');
   const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
   const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const controlRoomUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_968a08b3.jpg";
+  const controlRoomUrl = "/manus-storage/NF_control-wide-2026_4a3633f4.webp";
 
   const clients = [
     "Nathaniel Rateliff",
