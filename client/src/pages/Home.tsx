@@ -12,8 +12,8 @@ const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
 };
 
 export default function Home() {
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
+  const backslashUrl = "/images/bg-backslash-black_dd49c3a4.png";
+  const noiseUrl = "/images/bg-noise_e533a6c1.png";
   const seo = getSeoTags('home');
 
   return (
@@ -42,10 +42,10 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_control_01_0c8d15f9.jpg"
+          poster="/images/NF_control_01.jpg"
         >
           <source
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
+            src="/videos/NF_home-vid_01_sm_ba1123e0.mp4"
             type="video/mp4"
           />
         </video>
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none" style={{ top: '-70px' }}>
           <Link href="/studio" className="pointer-events-auto cursor-pointer hover:opacity-75 transition-opacity">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_logo_white_753dff54.png"
+              src="/images/NF_logo_white_753dff54.png"
               alt="National Freedom Logo"
               style={{
                 width: '1200px',
@@ -152,7 +152,7 @@ export default function Home() {
           {/* Buffalo Background Image (Right side on desktop) */}
           <div className="hidden md:flex flex-col items-end justify-center">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_buffalo-head_01_29a9febb.png"
+              src="/images/NF_buffalo-head_01.png"
               alt="Buffalo Head"
               className="max-h-96 object-contain mb-4"
             />

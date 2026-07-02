@@ -5,9 +5,9 @@ import { breadcrumbSchema } from "@/lib/schema";
 
 export default function Mastering() {
   const seo = getSeoTags('mastering');
-  const noiseUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-noise_e533a6c1.png";
-  const backslashUrl = "https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/bg-backslash-black_dd49c3a4.png";
-  const controlRoomUrl = "/manus-storage/NF_control-wide-2026_4a3633f4.webp";
+  const noiseUrl = "/images/bg-noise_e533a6c1.png";
+  const backslashUrl = "/images/bg-backslash-black_dd49c3a4.png";
+  const controlRoomUrl = "/images/NF_control-wide-2026.webp";
 
   const clients = [
     "Nathaniel Rateliff",
