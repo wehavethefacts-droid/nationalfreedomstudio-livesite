@@ -45,7 +45,7 @@ export default function Home() {
           poster="/images/NF_control_01.jpg"
         >
           <source
-            src="/videos/NF_home-vid_01_sm_ba1123e0.mp4"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
             type="video/mp4"
           />
         </video>
