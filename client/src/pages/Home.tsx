@@ -42,7 +42,6 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="/images/NF_control_01.jpg"
         >
           <source
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540620790/M6e5W9g9dsjkZnMVL2zJJv/NF_home-vid_01_sm_ba1123e0.mp4"
