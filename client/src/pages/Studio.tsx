@@ -8,7 +8,7 @@ export default function Studio() {
   const seo = getSeoTags('studio');
   // Studio photos with labels - masonry layout with varying sizes
   const studioPhotos = [
-    { label: "/// Control Room", url: "/images/NF_control-wide-2026.webp", colSpan: 2, rowSpan: 1 },
+    { label: "/// Control Room", url: "/images/NF_control-wide-2026.webp?v=2026-07-02", colSpan: 2, rowSpan: 1 },
     { label: "/// Drums + bobs & bits", url: "/images/NF_drum-corner_01.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// 1969 Gibson ES-125 guitar + amps", url: "/images/NF_guitar-amps_01.jpg", colSpan: 1, rowSpan: 1 },
     { label: "/// Main Room", url: "/images/NF_main-room_01.jpg", colSpan: 2, rowSpan: 1 },
@@ -57,7 +57,7 @@ export default function Studio() {
                 /// TH3 STUDIO
               </h1>
               <p className="text-white text-base md:text-lg leading-relaxed" style={{fontFamily: "'Inconsolata', monospace", maxWidth: '750px'}}>
-                Eclectic. Intimate. The right mix of vintage hunkydory and modern wizbang. This isn't a sterile, operating-room audio clinic. National Freedom is making music in someone's rad living room that feels like your own rad living room.
+                An unassuming door on the side of a 100-year-old barn functions as a portal to a place outside of time. In the control room, vintage analog gear interfaces with modern tools. The tracking room has a warmth and dimension that's hard to describe until you're standing in it (or maybe you've heard it on your favorite record). A motley collection of vintage instruments inside legendary sonic geometry. This is where great records are made.
               </p>
             </div>
           </div>
