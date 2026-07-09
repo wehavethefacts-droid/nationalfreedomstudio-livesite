@@ -1,7 +1,7 @@
 export const seoData = {
   home: {
     title: "National Freedom Studio - Home",
-    description: "National Freedom is a landmark recording studio where some of the most original records of the last decade were made. Eclectic, intimate, and equipped with vintage and modern gear.",
+    description: "National Freedom is a landmark recording studio where some of the most original records of the last two decades were made. Eclectic, intimate, and equipped with vintage and modern gear.",
     url: "https://nationalfreedomstudio.com/",
   },
   studio: {
@@ -26,7 +26,7 @@ export const seoData = {
   },
   about: {
     title: "About - National Freedom Studio",
-    description: "Learn about National Freedom Studio, a landmark recording studio where some of the most original records of the last decade were made.",
+    description: "Learn about National Freedom Studio, a landmark recording studio where some of the most original records of the last two decades were made.",
     url: "https://nationalfreedomstudio.com/about",
   },
   contact: {

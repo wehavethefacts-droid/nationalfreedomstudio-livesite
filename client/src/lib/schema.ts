@@ -7,7 +7,7 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "National Freedom Studio",
   "url": "https://nationalfreedomstudio.com",
-  "description": "National Freedom is a landmark studio where some of the most original records of the last decade were made.",
+  "description": "National Freedom is a landmark studio where some of the most original records of the last two decades were made.",
   "logo": "https://nationalfreedomstudio.com/logo.png",
   "sameAs": [
     "https://twitter.com/nationalfreedomstudio",

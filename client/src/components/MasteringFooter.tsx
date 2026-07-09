@@ -33,7 +33,7 @@ export default function MasteringFooter() {
               /// The Studio
             </h2>
             <p className="mb-0 text-white text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
-              National Freedom is a landmark studio where some of the most original records of the last decade were made.
+              National Freedom is a landmark studio where some of the most original records of the last two decades were made.
             </p>
             <p className="mt-4">
               <Link href="/studio" className="text-base font-bold hover:opacity-80 transition-opacity" style={{color: '#d97a9a', fontFamily: "'Inconsolata', monospace"}}>
