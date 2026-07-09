@@ -7,7 +7,7 @@ export default function Mastering() {
   const seo = getSeoTags('mastering');
   const noiseUrl = "/images/bg-noise_e533a6c1.png";
   const backslashUrl = "/images/bg-backslash-black_dd49c3a4.png";
-  const controlRoomUrl = "/images/NF_control-wide-2026.webp";
+  const controlRoomUrl = "/images/NF_control-wide-2026.webp?v=2026-07-02";
 
   const clients = [
     "Nathaniel Rateliff",
@@ -24,7 +24,8 @@ export default function Mastering() {
     "Pedro the Lion",
     "Benny Yurco",
     "Gardens & Villa",
-    "Fug Yep Soundation"
+    "Fug Yep Soundation",
+    "Midlake"
   ];
 
   return (
