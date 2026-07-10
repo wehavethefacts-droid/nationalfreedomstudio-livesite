@@ -35,8 +35,8 @@ export default function Mastering() {
     "Wayne Everett",
     "Delaney Bailey",
     "GVTH DVDDY",
-    "Fug Yep Soundation",
-    "James McAllister & Shara Nova (Sovereign Film Score)"
+    "James McAllister & Shara Nova (Sovereign Film Score)",
+    "Fug Yep Soundation"
   ];
 
   return (
