@@ -17,8 +17,8 @@ const routes = [
   '/contact'
 ];
 
-// Read the base index.html
-const indexPath = path.join(__dirname, 'docs', 'index.html');
+// Read the base index.html from dist/public (freshly built)
+const indexPath = path.join(__dirname, 'dist', 'public', 'index.html');
 const indexContent = fs.readFileSync(indexPath, 'utf-8');
 
 // For each route, create a directory with index.html
