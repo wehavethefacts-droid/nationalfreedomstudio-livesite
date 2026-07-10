@@ -25,7 +25,19 @@ export default function Mastering() {
     "Benny Yurco",
     "Gardens & Villa",
     "Fug Yep Soundation",
-    "Midlake"
+    "Midlake",
+    "Jessie Baylin",
+    "Michael Nau",
+    "Dr. Dog",
+    "GVTH DVDDY",
+    "Ken Pomeroy",
+    "James McAllister & Shara Nova (Sovereign Film Score)",
+    "Ester Drang",
+    "Lauren Lakis",
+    "Morella's Forest",
+    "Wayne Everett",
+    "Delaney Bailey",
+    "Matt Costa"
   ];
 
   return (
