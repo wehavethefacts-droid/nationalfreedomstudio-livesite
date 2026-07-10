@@ -122,7 +122,7 @@ export default function Mastering() {
                 /// A SELECTION OF CLIENTS
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base md:text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
+              <div className="grid grid-cols-2 gap-4 text-base md:text-lg" style={{fontFamily: "'Inconsolata', monospace"}}>
                 {clients.map((client, idx) => (
                   <p key={idx} className="font-bold">{client}</p>
                 ))}
